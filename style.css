@@ -503,13 +503,13 @@ td {
 
 .title_infoleft {
     position: absolute;
-    top: 380px;
+        top: calc(50vh - 100px);
     left: 11px;
 }
 
 .title_inforight {
 	position: absolute;
-    top: 335px;
+    top: calc(50vh - 150px);
     right: 3px;
 }
 
@@ -1026,44 +1026,6 @@ textarea {
     object-fit: cover;
 }
 
-/*
-top
-main#primary::before {
-    content: " ";
-    background-color: #da1984;
-    width: calc(100vw - 100px);
-    height: 10px;
-    z-index: 1;
-    position: absolute;
-    left: 50px;
-    top: 150px;
-}
-
-left
-.event_thumbnail::before {
-    content: " ";
-    background-color: #da1984;
-    width: 10px;
-    height: 460px;
-    z-index: 1;
-    position: absolute;
-    left: 50px;
-    top: 150px;
-}
-
-right 
-.event_thumbnail::after {
-    content: " ";
-    background-color: #da1984;
-    width: 10px;
-    height: 460px;
-    z-index: 1;
-    position: absolute;
-    right: 50px;
-    top: 150px;
-}
-*/
-
 .event_thumbnail {
     z-index: -1;
     position: relative;
@@ -1115,6 +1077,11 @@ margin: 100px auto 0px auto;
     width: 1024px;
     height: 350px;
     object-fit: cover;
+    filter: grayscale(1);
+}
+
+.wp-block-latest-posts__featured-image img:hover {
+    filter: none;
 }
 
 .wp-block-latest-posts li > a {
@@ -1168,7 +1135,7 @@ margin: 100px auto 0px auto;
 
 #footer-sidebar2 {
 	background-color: #FF7500;
-	padding: 0 50px;
+	padding: 0 60px;
 }
 
 #footer-sidebar2 p,
@@ -1243,19 +1210,6 @@ main {
 	height: 500px;
 }
 
-/* rect 
-.has-background-dim h1.has-text-align-center::before,
-.has-background-dim h1.has-text-align-center::after {
-    content: " ";
-    background-color: #da1984;
-    width: 10px;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
-    left: 50px;
-    top: 0;
-}
-*/
 .has-background-dim h1.has-text-align-center::after {
     right: 50px;
     left: auto;
@@ -1268,6 +1222,17 @@ main {
 .blocks-gallery-grid, .wp-block-gallery {
     padding: 0;
     align-items: center;
+    grid-gap: 50px;
+}
+
+@media (min-width: 600px) {
+	.blocks-gallery-grid.columns-3 .blocks-gallery-image,
+	.blocks-gallery-grid.columns-3 .blocks-gallery-item,
+	.wp-block-gallery.columns-3 .blocks-gallery-image,
+	.wp-block-gallery.columns-3 .blocks-gallery-item {
+	    width: calc(33.33333% - 50px);
+	    margin-right: 0;
+	}
 }
 
 /* Captions
@@ -1357,61 +1322,6 @@ main {
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
 .infinity-end.neverending .site-footer {
 	display: block;
-}
-
-/* WP Members
---------------------------------------------- */
-
-#wpmem_login input[type=password],
-#wpmem_login input[type=text],
-#wpmem_reg input[type=date],
-#wpmem_reg input[type=email],
-#wpmem_reg input[type=number],
-#wpmem_reg input[type=password],
-#wpmem_reg input[type=text],
-#wpmem_reg input[type=url],
-#wpmem_reg textarea {
-    border: 2px solid #F395C7 !important;
-    border-radius: 0px !important;
-}
-
-legend {
-	text-transform: uppercase;
-    font-family: "Work Sans";
-    letter-spacing: 3px;
-}
-
-#wpmem_reg .req {
-    color: #da1984 !important;
-}
-
-#wpmem_register_form a {
-	text-transform: none;
-    letter-spacing: 0px;
-    font-family: "Frutiger", sans-serif;
-    font-size: 1em;
-}
-
-/* button */
-#wpmem_login_form .buttons,
-#wpmem_register_form .buttons {
-    border: 5px solid #da1984;
-    border-radius: 0px;
-    background-color: #fff;
-    font-family: "Work Sans";
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 1.5em;
-}
-
-#wpmem_login_form .buttons:hover, #wpmem_register_form .buttons:hover {
-    background-color: #da1984;
-    color: #fff;
-    cursor: pointer;
-}
-
-#wpmem_login .button_div, #wpmem_reg .button_div {
-    text-align: left !important;
 }
 
 /*--------------------------------------------------------------
