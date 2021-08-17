@@ -53,21 +53,16 @@ var pop = document.getElementById('menu-item-31');
 var konf = document.getElementById('menu-item-32');
 
 about.onclick = function () {
-	console.log("Hier");
 	location.href = "http://popbuero.project2010.org/#about";
 	about.scrollIntoView({behavior: "smooth"});
 }
 
-/*
-	
-	window.scrollTo(0, 1000);
-	
-	document.getElementById(document.body).animate({
-    'scrollTop': document.getElementById('pop').offset().top
-	}, 2000);
-	
-
-	({top: 2000,
-    behavior: "smooth"});
+pop.onclick = function () {
+  location.href = "http://popbuero.project2010.org/#pop";
+  pop.scrollIntoView({behavior: "smooth"});
 }
-*/
+
+konf.onclick = function () {
+  location.href = "http://popbuero.project2010.org/#konferenz";
+  konf.scrollIntoView({behavior: "smooth"});
+}

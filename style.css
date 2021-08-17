@@ -870,11 +870,11 @@ textarea {
 	text-decoration: none;
 }
 
-#site-navigation a {
+.main-navigation a {
     font: 3em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
     clear: both;
     margin: 0 auto;
-    font-weight: 400;
+    font-weight: 800;
     color: #fff;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -1473,29 +1473,42 @@ main {
 --------------------------------------------------------------*/
 @media only screen and (max-width: 1244px) {
 	.home #frame p {
-		margin: -50px 50px 150px 50px;
+		margin: -50px 50px 50px 50px;
 	}
 	
 	.home .entry-header h1 {
 		font-size: 7em;
-		width: 4.1em;
+		width: 6.3em;
 		text-align: center;
 		letter-spacing: 55px;
 	}
 }
 
-@media only screen and (max-width: 768px) {
-
-	#wpmem_login .div_text, #wpmem_reg .div_checkbox, #wpmem_reg .div_date, #wpmem_reg .div_file, #wpmem_reg .div_image, #wpmem_reg .div_multicheckbox, #wpmem_reg .div_multiselect, #wpmem_reg .div_number, #wpmem_reg .div_radio, #wpmem_reg .div_select, #wpmem_reg .div_text, #wpmem_reg .div_textarea, #wpmem_reg .div_url,
-	#wpmem_login .button_div, #wpmem_reg .button_div {
-   		width: 100% !important;
+/* mobil */
+@media only screen and (max-width: 767px) {
+	#frame {
+	    border: 5px solid #DA1984;
+	    margin: 20px;
 	}
 	
-	/* footer */
-	.blocks-gallery-grid.columns-5 .blocks-gallery-image, .blocks-gallery-grid.columns-5 .blocks-gallery-item, .wp-block-gallery.columns-5 .blocks-gallery-image, .wp-block-gallery.columns-5 .blocks-gallery-item {
-    width: 30%;
-    margin: 0;
+	.home .entry-header h1 {
+	    font-size: 3em;
+	    width: 5.2em;
+	    letter-spacing: 40px;
+	    text-align: left;
 	}
-	
 
+	h1, h2, h3, h4, h5, h6 {
+	    font-size: 3em;
+	    width: 5.6em;
+	}
+
+	.home #frame p {
+	    margin: 0;
+	    padding: 10px;
+	}
+
+	td {
+		font-size: 2em;
+	}
 }
