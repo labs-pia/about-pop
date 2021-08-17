@@ -1245,7 +1245,7 @@ main {
 	height: 500px;
 }
 
-/* rect */
+/* rect 
 .has-background-dim h1.has-text-align-center::before,
 .has-background-dim h1.has-text-align-center::after {
     content: " ";
@@ -1257,7 +1257,7 @@ main {
     left: 50px;
     top: 0;
 }
-
+*/
 .has-background-dim h1.has-text-align-center::after {
     right: 50px;
     left: auto;
