@@ -7,7 +7,6 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Template: about-pop
 Template Version: 1.0.1
 GitHub Theme URI: https://github.com/labs-pia/about-pop
 
@@ -452,7 +451,6 @@ h6 {
     font-weight: 750;
     width: 3.7em;
     letter-spacing: 55px;
-    color: #000;
 }
 
 /* post-title */
