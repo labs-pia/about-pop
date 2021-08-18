@@ -176,6 +176,7 @@ add_action( 'wp_enqueue_scripts', 'about_pop_scripts' );
 
 function about_pop_excerpt($text)
 {
+	global $post;
 	$raw_excerpt = $text;
 	$text = get_the_content($post->ID);
 	/*if ( '' == $text ) {
