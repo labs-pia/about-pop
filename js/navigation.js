@@ -52,6 +52,18 @@ var about = document.getElementById('menu-item-30');
 var pop = document.getElementById('menu-item-31');
 var konf = document.getElementById('menu-item-32');
 
+//Back to top
+jQuery(function($) {
+  $('#menu-item-32').click(function(){
+    $('html, body').animate({
+      scrollTop : 200
+    },1500);
+    return false;
+  });
+});
+
+
+/*
 about.onclick = function () {
 	location.href = "http://popbuero.project2010.org/#about";
 	about.scrollIntoView({behavior: "smooth"});
@@ -66,3 +78,4 @@ konf.onclick = function () {
   location.href = "http://popbuero.project2010.org/#konferenz";
   konf.scrollIntoView({behavior: "smooth"});
 }
+*/

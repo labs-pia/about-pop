@@ -139,9 +139,17 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong {
-	font-weight: bolder;
+b, strong {
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+b a, strong a {
+font-size: 1em;
 }
 
 /**
@@ -437,7 +445,7 @@ h6 {
 	font: 8em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
 	clear: both;
     margin: 0 auto;
-    font-weight: 400;
+    font-weight: 800;
     color: #fff;
 	width: 3.6em;
     letter-spacing: 45px;
@@ -618,6 +626,7 @@ embed,
 iframe,
 object {
 	max-width: 100%;
+	transform: translateX(50%);
 }
 
 img {
