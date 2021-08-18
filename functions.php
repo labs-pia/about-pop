@@ -171,31 +171,50 @@ function about_pop_scripts() {
 add_action( 'wp_enqueue_scripts', 'about_pop_scripts' );
 
 /**
- * Special excerpt function
- * cuts a string by $maxchar
- */
-function about_pop_excerpt($text, $maxchar, $end='...') {
-    if (strlen($text) > $maxchar || $text == '') {
-        $words = preg_split('/\s/', $text);      
-        $output = '';
-        $i      = 0;
-        while (1) {
-            $length = strlen($output)+strlen($words[$i]);
-            if ($length > $maxchar) {
-                break;
-            } 
-            else {
-                $output .= " " . $words[$i];
-                ++$i;
-            }
-        }
-        $output .= $end;
-    } 
-    else {
-        $output = $text;
-    }
-    return $output;
+* allow formatted text in excerpts
+**/
+
+function about_pop_excerpt($text)
+{
+	$raw_excerpt = $text;
+	if ( '' == $text ) {
+		$text = get_the_content('');
+		$text = strip_shortcodes( $text );
+		$text = apply_filters('the_content', $text);
+		$text = str_replace(']]>', ']]&gt;', $text);
+
+		// Removes any JavaScript in posts (between <script> and </script> tags)
+		$text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
+
+		// Enable formatting in excerpts - Add HTML tags that you want to be parsed in excerpts, default is 55
+		$text = strip_tags($text, '<strong><b><em><i><a><code><kbd><p><br><ul><ol><li><img>');
+
+		// Set custom excerpt length - number of words to be shown in excerpts
+		$excerpt_length = apply_filters('excerpt_length', 60);
+
+		// Modify excerpt more string at the end from [...] to ...
+		// $excerpt_more = apply_filters('excerpt_more', ' ' . '...');
+
+		$words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
+		if ( count($words) > $excerpt_length ) {
+			array_pop($words);
+			$text = implode(' ', $words);
+
+			// IMPORTANT! Prevents tags cutoff by excerpt (i.e. unclosed tags) from breaking formatting
+			$text = force_balance_tags( $text );
+
+			$text = $text . $excerpt_more;
+		} 
+		else {
+			$text = implode(' ', $words);
+		}
+	}
+	return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 }
+
+// Remove the native excerpt function, and replace it with our improved function
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'about_pop_excerpt');
 
 /**
  * Implement the Custom Header feature.
