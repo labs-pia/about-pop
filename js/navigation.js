@@ -55,9 +55,7 @@ var konf = document.getElementById('menu-item-32');
 //Back to top
 jQuery(function($) {
   $('#menu-item-32').click(function(){
-    $('html, body').animate({
-      scrollTop : 200
-    },1500);
+    alert("click....");
     return false;
   });
 });

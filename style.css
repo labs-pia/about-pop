@@ -626,7 +626,9 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-	transform: translateX(50%);
+	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 img {
@@ -1333,6 +1335,18 @@ main {
 	display: block;
 }
 
+/* Real Cookie Banner
+--------------------------------------------- */
+
+.rcb-content-blocker {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.rcb-content-blocker a {
+    font-size: 1em;
+}
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
@@ -1421,6 +1435,20 @@ main {
 
 .error404 .page-content {
 	height: 150px;
+}
+
+/* Sponsoren
+--------------------------------------------- */
+.page-id-116 .entry-content {
+    background-color: #fff;
+    padding: 50px;
+    margin: 0 50px 50px 50px;
+    box-shadow: 0px 5px 5px #00000042;
+}
+
+.page-id-116 h2 {
+    letter-spacing: 15px;
+    word-break: break-word;
 }
 
 /* Datenschutz + Impressum
