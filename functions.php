@@ -221,12 +221,15 @@ if (!function_exists('shortcode_impressum')) {
 }
 add_shortcode('impressum', 'shortcode_impressum');
 
-
-
-
 /* read more link */
 function new_excerpt_more($more) {
 global $post;
    return '… <a class="read_more" href="'. get_permalink($post->ID) . '">' . '&#9658; Mehr<br>Buchen' . '</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+function load_java_scripts() {
+    // Load FlexSlider JavaScript that handle the SlideShow:
+    wp_enqueue_script('jQuery-js', 'http://code.jquery.com/jquery.js', array(), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'load_java_scripts');
