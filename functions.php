@@ -202,7 +202,7 @@ function pop_buero_allowedtags() {
 	return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>'; 
 }
 
-if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 
+if ( ! function_exists( 'pop_buero_custom_wp_trim_excerpt' ) ) : 
 
     function pop_buero_custom_wp_trim_excerpt($excerpt) {
     global $post;
