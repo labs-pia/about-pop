@@ -46,7 +46,7 @@ function close() {
   schalter = false;
 }
 
-$('#site-navigation a ').click(function() {
+$('#primary-menu a ').click(function() {
   alert("click...");
   var p = $(this).attr('href');
   $('html, body').animate({
