@@ -15,54 +15,7 @@ function pop_buero_allowedtags() {
 function pop_buero_trim_excerpt($p_excerpt) {
     global $post;
     $raw_excerpt = $p_excerpt;
-        if ( '' == $p_excerpt ) {
-            $p_excerpt = get_the_content(the_ID());
-            $p_excerpt = strip_shortcodes( $p_excerpt );
-            $p_excerpt = apply_filters('the_content', $p_excerpt);
-            $p_excerpt = str_replace(']]>', ']]&gt;', $p_excerpt);
-            $p_excerpt = strip_tags($p_excerpt, wpse_allowedtags()); /*IF you need to allow just certain tags. Delete if all tags are allowed */
-
-            //Set the excerpt word count and only break after sentence is complete.
-                $excerpt_word_count = 75;
-                $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
-                $tokens = array();
-                $excerptOutput = '';
-                $count = 0;
-
-                // Divide the string into tokens; HTML tags, or words, followed by any whitespace
-                preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $p_excerpt, $tokens);
-
-                foreach ($tokens[0] as $token) { 
-
-                    if ($count >= $excerpt_word_count && preg_match('/[\,\;\?\.\!]\s*$/uS', $token)) { 
-                    // Limit reached, continue until , ; ? . or ! occur at the end
-                        $excerptOutput .= trim($token);
-                        break;
-                    }
-
-                    // Add words to complete sentence
-                    $count++;
-
-                    // Append what's left of the token
-                    $excerptOutput .= $token;
-                }
-
-            $p_excerpt = trim(force_balance_tags($excerptOutput));
-
-                $excerpt_end = ' <a href="'. esc_url( get_permalink() ) . '">' . '&nbsp;&raquo;&nbsp;' . sprintf(__( 'Read more about: %s &nbsp;&raquo;', 'wpse' ), get_the_title()) . '</a>'; 
-                $excerpt_more = apply_filters('excerpt_more', ' ' . $excerpt_end); 
-
-                //$pos = strrpos($p_excerpt, '</');
-                //if ($pos !== false)
-                // Inside last HTML tag
-                //$p_excerpt = substr_replace($p_excerpt, $excerpt_end, $pos, 0); /* Add read more next to last word */
-                //else
-                // After the content
-                $p_excerpt .= $excerpt_end; /*Add read more in new paragraph */
-
-            return $p_excerpt;   
-
-        }
+        
         return apply_filters('pop_buero_trim_excerpt', $p_excerpt, $raw_excerpt);
     }
 
