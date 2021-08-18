@@ -1523,6 +1523,15 @@ main {
 
 /* mobil */
 @media only screen and (max-width: 767px) {
+	.custom-logo-link {
+	    width: 100px;
+	    margin: 15px 30px;
+	}
+	.main-navigation, .site-header, .logo-wrapper, #burger {
+	    height: 70px;
+	}
+
+	#burger {top: -10px;}
 	#frame {
 	    border: 5px solid #DA1984;
 	    margin: 20px;
@@ -1533,6 +1542,9 @@ main {
 	    width: 5.2em;
 	    letter-spacing: 40px;
 	    text-align: left;
+	    transform: translateY(-50%);
+	    top: 50%;
+	    position: relative;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1540,12 +1552,23 @@ main {
 	    width: 5.6em;
 	}
 
+	.entry-content h1 {height: 250px;}
 	.home #frame p {
 	    margin: 0;
 	    padding: 10px;
 	}
 
-	td {
-		font-size: 2em;
-	}
+	.wp-block-buttons {height: 150px;margin: 20px;}
+
+	td {font-size: 2em;}
+	#footer-sidebar2 {padding: 0 20px;}
+	.wp-block-column {flex-basis: 50%;}
+	.blocks-gallery-grid, .wp-block-gallery {grid-gap: 10px;}
+	.blocks-gallery-grid .blocks-gallery-image,
+	.blocks-gallery-grid .blocks-gallery-item,
+	.wp-block-gallery .blocks-gallery-image,
+	.wp-block-gallery .blocks-gallery-item {width: calc(50% - 20px);}
+	#footer-sidebar1 {padding: 25px;}
+
+
 }
