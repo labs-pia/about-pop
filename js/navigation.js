@@ -52,6 +52,7 @@ function close() {
 
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
+  p = p.replace("/", "");
   
   $('html, body').animate({
     scrollTop : $(p).position().top
