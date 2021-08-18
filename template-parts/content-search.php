@@ -26,7 +26,7 @@
 	<?php about_pop_post_thumbnail(); ?>
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php about_pop_excerpt(the_content(), 50); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
