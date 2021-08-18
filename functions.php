@@ -177,13 +177,13 @@ add_action( 'wp_enqueue_scripts', 'about_pop_scripts' );
 function about_pop_excerpt($text)
 {
 	$raw_excerpt = $text;
-	/*if ( '' == $text ) {
+	if ( '' == $text ) {
 		$text = get_the_content('');
 		$text = strip_shortcodes( $text );
 		$text = apply_filters('the_content', $text);
 		$text = str_replace(']]>', ']]&gt;', $text);
 
-		// Removes any JavaScript in posts (between <script> and </script> tags)
+		/*// Removes any JavaScript in posts (between <script> and </script> tags)
 		$text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
 
 		// Enable formatting in excerpts - Add HTML tags that you want to be parsed in excerpts, default is 55
@@ -207,8 +207,8 @@ function about_pop_excerpt($text)
 		} 
 		else {
 			$text = implode(' ', $words);
-		}
-	}*/
+		}*/
+	}
 	return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 }
 
