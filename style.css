@@ -1441,19 +1441,22 @@ main {
 /* Sponsoren
 --------------------------------------------- */
 .page-id-116 .entry-content,
-.post-password-required .entry-content {
+.post-password-required .entry-content,
+.post-password-protected .entry-content {
     background-color: #fff;
     padding: 50px;
     margin: 0 50px 50px 50px;
     box-shadow: 0px 5px 5px #00000042;
 }
 
-.post-password-required .entry-title {
+.post-password-required .entry-title,
+.post-password-protected .entry-title {
 width: 6.9em;
 }
 
 .page-id-116 h2,
-.post-password-required h2 {
+.post-password-required h2,
+.post-password-protected h2 {
     letter-spacing: 15px;
     word-break: break-word;
 }
