@@ -161,6 +161,7 @@ function about_pop_scripts() {
 	wp_enqueue_style( 'about-pop-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'about-pop-style', 'rtl', 'replace' );
 
+	wp_enqueue_script('jquery-js', get_template_directory_uri() . '/js/jquery-min.js', _S_VERSION, '1.0', true);
 	wp_enqueue_script( 'about-pop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -228,8 +229,3 @@ global $post;
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-function load_java_scripts() {
-    // Load FlexSlider JavaScript that handle the SlideShow:
-    wp_enqueue_script('jQuery-js', 'http://code.jquery.com/jquery.js', array(), '1.0', true);
-}
-add_action('wp_enqueue_scripts', 'load_java_scripts');
