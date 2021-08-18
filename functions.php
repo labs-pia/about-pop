@@ -197,10 +197,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-//add_filter('get_the_excerpt', 'pop_buero_custom_wp_trim_excerpt'); 
-
-
 /**
  * external Contents
  */
