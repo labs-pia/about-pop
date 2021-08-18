@@ -46,26 +46,16 @@ function close() {
   schalter = false;
 }
 
-$('#nav-main a ').click(function() {
+// Smooth scoller
+// by clicking on a menu item, the function handles the href attribute and scrolls to it
+//
+
+$('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
+  p = p.replace("/", "");
+  
   $('html, body').animate({
     scrollTop : $(p).position().top
   },1500);
 });
 
-/*
-about.onclick = function () {
-	location.href = "http://popbuero.project2010.org/#about";
-	about.scrollIntoView({behavior: "smooth"});
-}
-
-pop.onclick = function () {
-  location.href = "http://popbuero.project2010.org/#pop";
-  pop.scrollIntoView({behavior: "smooth"});
-}
-
-konf.onclick = function () {
-  location.href = "http://popbuero.project2010.org/#konferenz";
-  konf.scrollIntoView({behavior: "smooth"});
-}
-*/
