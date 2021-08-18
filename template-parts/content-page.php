@@ -15,8 +15,6 @@ function pop_buero_allowedtags() {
 function pop_buero_trim_excerpt($p_excerpt) {
     global $post;
     $raw_excerpt = $p_excerpt;
-
-    $p_excerpt = get_the_content($post->ID);
         
     return apply_filters('pop_buero_trim_excerpt', $p_excerpt, $raw_excerpt);
 }
