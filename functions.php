@@ -210,7 +210,7 @@ function about_pop_excerpt($text)
 			$text = implode(' ', $words);
 		}
 	}*/
-	return $text
+	return $text;
 }
 
 // Remove the native excerpt function, and replace it with our improved function
