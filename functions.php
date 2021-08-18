@@ -251,7 +251,7 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
                 //$wpse_excerpt = substr_replace($wpse_excerpt, $excerpt_end, $pos, 0); /* Add read more next to last word */
                 //else
                 // After the content
-                $wpse_excerpt .= $excerpt_end; /*Add read more in new paragraph */
+                $excerpt .= $excerpt_end; /*Add read more in new paragraph */
 
             return $excerpt;   
 
