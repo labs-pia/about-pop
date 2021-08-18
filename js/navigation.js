@@ -52,6 +52,8 @@ function close() {
 
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
+  p.preventDefault();
+  
   $('html, body').animate({
     scrollTop : $(p).position().top
   },1500);
