@@ -211,7 +211,7 @@ function about_pop_excerpt($text)
 			$text = implode(' ', $words);
 		}
 	}*/
-	return $text;
+	return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 }
 
 // Remove the native excerpt function, and replace it with our improved function
