@@ -177,7 +177,7 @@ add_action( 'wp_enqueue_scripts', 'about_pop_scripts' );
 function about_pop_excerpt($text)
 {
 	$raw_excerpt = $text;
-	if ( '' == $text ) {
+	/*if ( '' == $text ) {
 		$text = get_the_content('');
 		$text = strip_shortcodes( $text );
 		$text = apply_filters('the_content', $text);
@@ -208,7 +208,7 @@ function about_pop_excerpt($text)
 		else {
 			$text = implode(' ', $words);
 		}
-	}
+	}*/
 	return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 }
 
