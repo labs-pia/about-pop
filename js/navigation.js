@@ -47,6 +47,7 @@ function close() {
 }
 
 $('#nav-main a ').click(function() {
+  alert("click...");
   var p = $(this).attr('href');
   $('html, body').animate({
     scrollTop : $(p).position().top
