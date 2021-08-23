@@ -485,7 +485,7 @@ h3 {
 }
 
 .entry-header {
-    height: calc(100vh - 170px);
+    height: calc(100vh - 160px);
     color: #fff;
     text-transform: uppercase;
     padding-top: 70px;
@@ -1071,15 +1071,8 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-/* latest posts entry */
-.wp-block-latest-posts.wp-block-latest-posts__list li {
-	margin: 100px auto 0px auto;
-    background-color: #fff;
-    box-shadow: 0px 5px 5px #00000042;
-    max-width: 1024px;
-	padding: 50px;
-}
 
+/* Liste der Events */
 .timetable {
     display: flex;
 }
@@ -1087,6 +1080,31 @@ textarea {
 .timetable li {
 	margin: 10px auto !important;
 	padding: 20px !important;
+	transition: 300ms;
+}
+
+.timetable li:hover {
+    transform: translate(0px, -5px);
+}
+
+.timetable li a:hover {
+    color: #da1984;
+    transition: 400ms;
+}
+
+/* PDF Programmübersicht */
+.programm {
+    box-shadow: 0px 5px 5px #00000042;
+    border: 10px solid #fff;
+}
+
+/* latest posts entry */
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+	margin: 100px auto 0px auto;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #00000042;
+    max-width: 1024px;
+	padding: 50px;
 }
 
 .wp-block-latest-posts__featured-image.aligncenter {
