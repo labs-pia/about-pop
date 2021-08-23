@@ -1576,6 +1576,10 @@ width: 6.9em;
 		text-align: center;
 		letter-spacing: 55px;
 	}
+
+	.rcb-content-blocker {
+	    margin: 0 50px;
+	}
 }
 
 /* mobil */
@@ -1594,9 +1598,15 @@ width: 6.9em;
 	    margin: 20px;
 	}
 	
+	.entry-header {
+    height: calc(100vh - 235px);
+	}
+	.title_inforight {right: 0px;}
+	.title_infoleft {left: 0px;}
+
 	.home .entry-header h1 {
-	    font-size: 3em;
-	    width: 5.2em;
+		font-size: 8em;
+   		width: 3.4em;
 	    letter-spacing: 40px;
 	    text-align: left;
 	    transform: translateY(-50%);
@@ -1604,18 +1614,24 @@ width: 6.9em;
 	    position: relative;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-	    font-size: 3em;
-	    width: 5.6em;
+	.wp-block-latest-posts__post-excerpt h1, 
+	.wp-block-latest-posts__post-excerpt h2, 
+	.wp-block-latest-posts__post-excerpt h3, 
+	.wp-block-latest-posts__post-excerpt h4, 
+	.wp-block-latest-posts__post-excerpt h5 {word-break: break-word;}
+
+	#about, #pop, #konferenz {
+	    font-size: 5em;
+    	width: 4.4em;
 	}
 
-	.entry-content h1 {height: 250px;}
+	.entry-content h1 {height: 250px; gap: 50px;}
 	.home #frame p {
 	    margin: 0;
 	    padding: 10px;
 	}
 
-	.wp-block-buttons {height: 150px;margin: 20px;}
+	.wp-block-buttons {margin: 20px;}
 
 	td {font-size: 2em;}
 	#footer-sidebar2 {padding: 0 20px;}
@@ -1626,9 +1642,5 @@ width: 6.9em;
 	.wp-block-gallery .blocks-gallery-image,
 	.wp-block-gallery .blocks-gallery-item {width: calc(50% - 20px);}
 	#footer-sidebar1 {padding: 25px;}
-
-	.rcb-content-blocker {
-	    margin: 0 50px;
-	}
 
 }
