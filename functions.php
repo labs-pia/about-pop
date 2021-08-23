@@ -234,8 +234,8 @@ function about_pop_get_excerpt( $args = array() ) {
 	// Default arguments.
 	$defaults = array(
 		'post'            => '',
-		'length'          => 40,
-		'readmore'        => false,
+		'length'          => 60,
+		'readmore'        => true,
 		'readmore_text'   => esc_html__( 'read more', 'text-domain' ),
 		'readmore_after'  => '',
 		'custom_excerpts' => true,
