@@ -348,6 +348,10 @@ textarea {
 	font: inherit;
 }
 
+.wp-block-buttons {
+    flex-direction: column;
+}
+
 /* Interactive
 	 ========================================================================== */
 
@@ -1176,7 +1180,7 @@ textarea {
 
 #footer-sidebar1 {
     background-color: #FF8A3D;
-	padding: 50px;
+	padding: 20px 50px 0px;
 }
 
 #footer-sidebar2 {
@@ -1267,7 +1271,7 @@ main {
 .blocks-gallery-grid, .wp-block-gallery {
     padding: 0;
     align-items: center;
-    grid-gap: 50px;
+    grid-gap: 0px 50px;
     justify-content: space-between;
 }
 

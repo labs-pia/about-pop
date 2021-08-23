@@ -262,7 +262,7 @@ function about_pop_get_excerpt( $args = array() ) {
 	else {
 
 		// Create the readmore link.
-		$readmore_link = '… <a class="read_more" href="'. get_permalink($post->ID) . '">' . '&#9658; Mehr<br>Buchen' . '</a>';
+		$readmore_link = '<a class="read_more" href="'. get_permalink($post->ID) . '">' . '&#9658; Mehr<br>Buchen' . '</a>';
 
 		// Check for more tag and return content if it exists.
 		if ( ! $disable_more && strpos( $post->post_content, '<!--more-->' ) ) {
