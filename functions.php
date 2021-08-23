@@ -255,7 +255,7 @@ function about_pop_get_excerpt( $args = array() ) {
 
 	// Check for custom excerpts.
 	if ( $custom_excerpts && has_excerpt( $post_id ) ) {
-		$output = $post->post_excerpt;
+		$output = $post->content;
 	}
 
 	// No custom excerpt...so lets generate one.
