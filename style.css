@@ -428,7 +428,7 @@ p {
     letter-spacing: 0.025em;
 }
 
-.home #frame p {
+.home p {
 	max-width: 1024px;
     margin: -50px auto 50px auto;
     background-color: #fff;
@@ -485,7 +485,7 @@ h3 {
 }
 
 .entry-header {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 170px);
     color: #fff;
     text-transform: uppercase;
     padding-top: 70px;
@@ -685,13 +685,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	line-height: 1;
+	border: none;
+	background: #da1984;
+	color: #fff;
 	padding: 0.6em 1em 0.4em;
+	cursor: pointer;
 }
 
 button:active,
@@ -779,10 +777,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	color: #000;
+	border: 3px solid #da1984;
+	border-radius: 0px;
+	padding: 0.4em 1em 0.2em;
 }
 
 input[type="text"]:focus,
@@ -1116,6 +1114,12 @@ margin: 100px auto 0px auto;
 .wp-block-latest-posts__post-excerpt,
 .wp-block-latest-posts a {
     margin: 0;
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list li p {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
 }
 
 .read_more {
@@ -1492,6 +1496,7 @@ width: 6.9em;
 	height: auto;
     display: block;
     text-align: left;
+    margin-top: 0;
 }
 
 .page-id-3 h3,
@@ -1508,11 +1513,14 @@ width: 6.9em;
 
 .page-id-3 .entry-header,
 .page-id-96 .entry-header{
-    display: none;
+    height: auto;
+	padding-left: 50px;
+	margin-bottom: -50px;
+	font-size: 2em;
 }
 
-.page-id-3 a,
-.page-id-96 a {
+.page-id-3 #frame a,
+.page-id-96 #frame a {
 	font-family: "Frutiger", sans-serif;
     font-size: 1em;
     letter-spacing: 1px;
