@@ -255,7 +255,7 @@ function about_pop_get_excerpt( $args = array() ) {
 
 	// Check for custom excerpts.
 	if ( $custom_excerpts && has_excerpt( $post_id ) ) {
-		$output = $post->content;
+		$output = $post->post_excerpt;
 	}
 
 	// No custom excerpt...so lets generate one.
@@ -273,7 +273,8 @@ function about_pop_get_excerpt( $args = array() ) {
 		else {
 
 			// Generate an excerpt from the post content.
-			$output = wp_trim_words( strip_shortcodes( $post->post_content ), $length );
+			//$output = wp_trim_words( strip_shortcodes( $post->post_content ), $length );
+			$output = $post->post_content;
 
 			// Add the readmore text to the excerpt if enabled.
 			if ( $readmore ) {
@@ -285,7 +286,6 @@ function about_pop_get_excerpt( $args = array() ) {
 		}
 
 	}
-	echo("custom function is called...");
 
 	// Apply filters and return the excerpt.
 	return apply_filters( 'about_pop_get_excerpt', $output );

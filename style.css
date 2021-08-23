@@ -1092,6 +1092,7 @@ margin: 100px auto 0px auto;
     height: 350px;
     object-fit: cover;
     filter: grayscale(1);
+    transition: 250ms;
 }
 
 .wp-block-latest-posts__featured-image img:hover {
