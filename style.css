@@ -512,14 +512,16 @@ td {
 
 .title_infoleft {
     position: absolute;
-        top: calc(50vh - 100px);
     left: 11px;
+    top: 50vh;
+	transform: translateY(-50%);
 }
 
 .title_inforight {
 	position: absolute;
-    top: calc(50vh - 150px);
     right: 3px;
+    top: 50vh;
+	transform: translateY(-50%);
 }
 
 dfn,
