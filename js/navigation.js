@@ -57,5 +57,8 @@ $('#primary-menu a ').click(function() {
   $('html, body').animate({
     scrollTop : $(p).position().top
   },1500);
+  if (schalter == true) {
+    close();
+  }
 });
 

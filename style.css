@@ -585,6 +585,7 @@ body {
 #frame {
     border: 10px solid #DA1984;
     margin: 50px;
+    padding-bottom: 50px;
 }
 
 .site {
@@ -1079,6 +1080,8 @@ textarea {
 /* Liste der Events */
 .timetable {
     display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .timetable li {
@@ -1251,6 +1254,7 @@ main {
     max-width: 1024px;
 	height: auto;
 	object-fit: contain;
+	width: 100%;
 }
 
 .wp-block-cover, .wp-block-cover-image {
@@ -1282,6 +1286,7 @@ main {
 	.wp-block-gallery.columns-3 .blocks-gallery-item {
 	    width: calc(33.33333% - 50px);
 	    margin-right: 0;
+	    max-width: 300px;
 	}
 }
 
@@ -1567,7 +1572,7 @@ width: 6.9em;
 	
 	.home .entry-header h1 {
 		font-size: 7em;
-		width: 6.3em;
+		width: 4.3em;
 		text-align: center;
 		letter-spacing: 55px;
 	}
@@ -1622,5 +1627,8 @@ width: 6.9em;
 	.wp-block-gallery .blocks-gallery-item {width: calc(50% - 20px);}
 	#footer-sidebar1 {padding: 25px;}
 
+	.rcb-content-blocker {
+	    margin: 0 50px;
+	}
 
 }
