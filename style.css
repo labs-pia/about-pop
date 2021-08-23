@@ -428,7 +428,7 @@ p {
     letter-spacing: 0.025em;
 }
 
-.home p {
+.home .entry-content p {
 	max-width: 1024px;
     margin: -50px auto 50px auto;
     background-color: #fff;
@@ -1093,7 +1093,7 @@ textarea {
 }
 
 /* PDF Programmübersicht */
-.programm {
+.programm img {
     box-shadow: 0px 5px 5px #00000042;
     border: 10px solid #fff;
 }
@@ -1268,6 +1268,7 @@ main {
     padding: 0;
     align-items: center;
     grid-gap: 50px;
+    justify-content: space-between;
 }
 
 @media (min-width: 600px) {
