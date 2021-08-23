@@ -229,3 +229,74 @@ global $post;
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+function about_pop_get_excerpt( $args = array() ) {
+
+	// Default arguments.
+	$defaults = array(
+		'post'            => '',
+		'length'          => 40,
+		'readmore'        => false,
+		'readmore_text'   => esc_html__( 'read more', 'text-domain' ),
+		'readmore_after'  => '',
+		'custom_excerpts' => true,
+		'disable_more'    => false,
+	);
+
+	// Apply filters to allow child themes mods.
+	$args = apply_filters( 'about_pop_get_excerpt', $defaults );
+
+	// Parse arguments, takes the function arguments and combines them with the defaults.
+	$args = wp_parse_args( $args, $defaults );
+
+	// Apply filters to allow child themes mods.
+	$args = apply_filters( 'about_pop_excerpt_args', $args );
+
+	// Extract arguments to make it easier to use below.
+	extract( $args );
+
+	// Get the current post.
+        $post = get_post( $post );
+
+	// Get the current post id.
+	$post_id = $post->ID;
+
+	// Check for custom excerpts.
+	if ( $custom_excerpts && has_excerpt( $post_id ) ) {
+		$output = $post->post_excerpt;
+	}
+
+	// No custom excerpt...so lets generate one.
+	else {
+
+		// Create the readmore link.
+		$readmore_link = '<a href="' . esc_url( get_permalink( $post_id ) ) . '" class="readmore">' . $readmore_text . $readmore_after . '</a>';
+
+		// Check for more tag and return content if it exists.
+		if ( ! $disable_more && strpos( $post->post_content, '<!--more-->' ) ) {
+			$output = apply_filters( 'the_content', get_the_content( $readmore_text . $readmore_after ) );
+		}
+
+		// No more tag defined so generate excerpt using wp_trim_words.
+		else {
+
+			// Generate an excerpt from the post content.
+			$output = wp_trim_words( strip_shortcodes( $post->post_content ), $length );
+
+			// Add the readmore text to the excerpt if enabled.
+			if ( $readmore ) {
+
+				$output .= apply_filters( 'wpex_readmore_link', $readmore_link );
+
+			}
+
+		}
+
+	}
+
+	// Apply filters and return the excerpt.
+	return apply_filters( 'about_pop_get_excerpt', $output );
+
+}
+
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'about_pop_get_excerpt'); 

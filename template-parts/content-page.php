@@ -7,22 +7,6 @@
  * @package About-Pop
  */
 
-function pop_buero_allowedtags() {
-	// Add custom tags to this string
-	return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>'; 
-}
-
-function pop_buero_trim_excerpt($p_excerpt) {
-    global $post;
-    $raw_excerpt = $p_excerpt;
-        
-    return apply_filters('pop_buero_trim_excerpt', $p_excerpt, $raw_excerpt);
-}
-
-remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-add_filter('get_the_excerpt', 'pop_buero_trim_excerpt'); 
-
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
