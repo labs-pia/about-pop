@@ -222,13 +222,6 @@ if (!function_exists('shortcode_impressum')) {
 }
 add_shortcode('impressum', 'shortcode_impressum');
 
-/* read more link */
-function new_excerpt_more($more) {
-global $post;
-   return '… <a class="read_more" href="'. get_permalink($post->ID) . '">' . '&#9658; Mehr<br>Buchen' . '</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
 function about_pop_get_excerpt( $args = array() ) {
 
 	// Default arguments.
@@ -269,7 +262,7 @@ function about_pop_get_excerpt( $args = array() ) {
 	else {
 
 		// Create the readmore link.
-		$readmore_link = '<a href="' . esc_url( get_permalink( $post_id ) ) . '" class="readmore">' . $readmore_text . $readmore_after . '</a>';
+		$readmore_link = '… <a class="read_more" href="'. get_permalink($post->ID) . '">' . '&#9658; Mehr<br>Buchen' . '</a>';
 
 		// Check for more tag and return content if it exists.
 		if ( ! $disable_more && strpos( $post->post_content, '<!--more-->' ) ) {
