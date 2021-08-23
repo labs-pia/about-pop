@@ -292,6 +292,7 @@ function about_pop_get_excerpt( $args = array() ) {
 		}
 
 	}
+	echo("custom function is called...");
 
 	// Apply filters and return the excerpt.
 	return apply_filters( 'about_pop_get_excerpt', $output );
