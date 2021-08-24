@@ -458,6 +458,13 @@ h6 {
 }
 
 /* webtitle */
+.entry-header {
+    height: calc(100vh - 160px);
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
 .home .entry-header h1 {
 	font-size: 9em;
     font-weight: 750;
@@ -467,6 +474,30 @@ h6 {
 	top: 50%;
 	position: absolute;
 	left: 55%;
+}
+
+.title_infoleft td,
+.title_inforight td {
+	font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 4em;
+    width: 0.8em;
+    line-height: 1;
+    text-transform: uppercase;
+	color: #fff;
+}
+
+.title_infoleft {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+	transform: translateY(-50%);
+}
+
+.title_inforight {
+	position: absolute;
+    right: 3px;
+    top: 50%;
+	transform: translateY(-50%);
 }
 
 /* post-title */
@@ -492,44 +523,29 @@ h3 {
 	width: 100%
 }
 
-.entry-header {
-    height: calc(100vh - 160px);
-    color: #fff;
-    text-transform: uppercase;
-    padding-top: 70px;
-}
-
-.entry-content h1 {
+/* longscroller nav */
+#about, #pop, #konferenz {
     height: 500px;
     text-align: center;
     display: flex;
     align-content: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin: 100px auto;
+    max-width: 1024px;
+    width: 100%;
 }
 
-td {
-	font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 4em;
-    width: 0.8em;
-    line-height: 1;
+#about td, #pop td, #konferenz td {
+	font: 8em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    clear: both;
+    margin: 0 auto;
+    font-weight: 800;
+    color: #fff;
+    width: 3.6em;
+    letter-spacing: 45px;
+    word-break: break-all;
     text-transform: uppercase;
-	color: #fff;
-}
-
-.title_infoleft {
-    position: absolute;
-    left: 11px;
-    top: 50vh;
-	transform: translateY(-50%);
-}
-
-.title_inforight {
-	position: absolute;
-    right: 3px;
-    top: 50vh;
-	transform: translateY(-50%);
 }
 
 dfn,
@@ -653,7 +669,7 @@ figure {
 }
 
 table {
-	margin: 0 0 1.5em;
+	margin: 0;
 	width: 100%;
 }
 
@@ -1636,7 +1652,7 @@ width: 6.9em;
 
 	td {font-size: 2em;}
 	#footer-sidebar2 {padding: 0 20px;}
-	.wp-block-column {flex-basis: 50%;}
+	.wp-block-column {flex-basis: 50% !important;}
 	.blocks-gallery-grid, .wp-block-gallery {grid-gap: 10px;}
 	.blocks-gallery-grid .blocks-gallery-image,
 	.blocks-gallery-grid .blocks-gallery-item,
