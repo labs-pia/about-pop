@@ -12,7 +12,6 @@ button.onclick = function () {
     }
 };
 
-
 function open() {
   siteNavigation.animate({
     "height":"100vh"
@@ -36,7 +35,7 @@ function close() {
   siteNavigation.animate({
     "height":"100px"
   }, 300);
-  setTimeout("siteNavigation.style.height = '100px';", 280);
+  setTimeout("siteNavigation.style.height = '70px';", 280);
 	
   menu.animate({
     "display":"none"

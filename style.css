@@ -463,6 +463,10 @@ h6 {
     font-weight: 750;
     width: 3.7em;
     letter-spacing: 55px;
+    transform: translate(-50%, -50%);
+	top: 50%;
+	position: absolute;
+	left: 55%;
 }
 
 /* post-title */
@@ -690,11 +694,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: none;
-	background: #da1984;
-	color: #fff;
-	padding: 0.6em 1em 0.4em;
-	cursor: pointer;
+    background: #ffffff;
+    color: #da1984;
+    padding: 0.6em 1em 0.4em;
+    cursor: pointer;
+    border: 3px solid #da1984;
+    font-family: "Frutiger", sans-serif;
+    font-size: 1em;
 }
 
 button:active,
@@ -785,7 +791,7 @@ textarea {
 	color: #000;
 	border: 3px solid #da1984;
 	border-radius: 0px;
-	padding: 0.4em 1em 0.2em;
+	padding: 0.6em 1em 0.4em;;
 }
 
 input[type="text"]:focus,
@@ -1573,7 +1579,6 @@ width: 6.9em;
 	.home .entry-header h1 {
 		font-size: 7em;
 		width: 4.3em;
-		text-align: center;
 		letter-spacing: 55px;
 	}
 
@@ -1592,7 +1597,7 @@ width: 6.9em;
 	    height: 70px;
 	}
 
-	#burger {top: -10px;}
+	#burger {top: -20px; right: -20px;}
 	#frame {
 	    border: 5px solid #DA1984;
 	    margin: 20px;
@@ -1605,13 +1610,9 @@ width: 6.9em;
 	.title_infoleft {left: 0px;}
 
 	.home .entry-header h1 {
-		font-size: 8em;
-   		width: 3.4em;
+		font-size: 3em;
+   		width: 5.2em;
 	    letter-spacing: 40px;
-	    text-align: left;
-	    transform: translateY(-50%);
-	    top: 50%;
-	    position: relative;
 	}
 
 	.wp-block-latest-posts__post-excerpt h1, 
