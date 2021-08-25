@@ -1568,6 +1568,14 @@ width: 6.9em;
 	#frame {border-width: 5px; margin: 20px;padding-bottom: 0;}
 	
 	.entry-header {height: calc(100vh - 100px);}
+	.page-id-96 .entry-header {
+	    padding: 20px;
+	    margin-bottom: 0;
+	    font-size: 1em;
+	}
+	.page-id-3 .entry-header {
+		display: none;
+	}
 	.title_inforight {right: 0px;}
 	.title_infoleft {left: 0px;}
 	.title_infoleft td, .title_inforight td {font-size: 28px;}
@@ -1588,6 +1596,7 @@ width: 6.9em;
 	    letter-spacing: 25px;
 	    text-align: center;
 	}
+	.page-id-3 #primary, .page-id-96 #primary {margin: 0px;}
 	#about, #pop, #konferenz {height: 200px; margin: 50px auto;}
 	#about td, #pop td, #konferenz td {font-size: 3em;}
 
@@ -1618,7 +1627,7 @@ width: 6.9em;
 	.page-id-116 .entry-content,
 	.post-password-required .entry-content,
 	.post-password-protected .entry-content,
-	.post-content {
+	.post-content, .page-id-3 .entry-content, .page-id-96 .entry-content {
 	    padding: 20px;
 	    margin: 0;
 	}
