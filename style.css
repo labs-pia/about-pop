@@ -937,7 +937,8 @@ textarea {
     height: 100px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
+    padding: 0px;
 }
 
 .site-main .comment-navigation,
@@ -1572,10 +1573,9 @@ width: 6.9em;
 	    height: 70px;
 	}
 
-	#burger {top: -20px; right: -20px;}
-	#frame {border: 5px solid #DA1984; margin: 20px;}
+	#frame {border-width: 5px; margin: 20px;padding-bottom: 0;}
 	
-	.entry-header {height: calc(100vh - 140px);}
+	.entry-header {height: calc(100vh - 100px);}
 	.title_inforight {right: 0px;}
 	.title_infoleft {left: 0px;}
 	.title_infoleft td, .title_inforight td {font-size: 28px;}
@@ -1583,6 +1583,18 @@ width: 6.9em;
 		font-size: 3em;
    		width: 5.2em;
 	    letter-spacing: 40px;
+	}
+	.post-password-required .entry-title, .post-password-protected .entry-title {
+		width: 80%;
+		font-size: 3em;
+		letter-spacing: 25px;
+		text-align: center;
+	}
+	.page-id-116 .entry-title {
+	    width: 4em;
+	    font-size: 3em;
+	    letter-spacing: 25px;
+	    text-align: center;
 	}
 	#about, #pop, #konferenz {height: 200px; margin: 50px auto;}
 	#about td, #pop td, #konferenz td {font-size: 3em;}
@@ -1599,9 +1611,18 @@ width: 6.9em;
 	.wp-block-latest-posts__post-excerpt h3 {font-size: 1em;letter-spacing: 4px;}
 
 	.entry-content h1 {height: 250px; gap: 50px;}
+	.page-id-116 h2, .post-password-required h2, .post-password-protected h2 {
+		letter-spacing: 10px;
+		font-size: 2em;
+	}
+
 	.home .entry-content p {
 	    margin: 0;
 	    padding: 10px;
+	}
+	.page-id-116 .entry-content, .post-password-required .entry-content, .post-password-protected .entry-content {
+	    padding: 20px;
+	    margin: 0;
 	}
 
 	.wp-block-buttons > .wp-block-button {margin: 0px auto;}
@@ -1614,7 +1635,7 @@ width: 6.9em;
 	.wp-block-latest-posts li > a {font-size: 20px;}
 
 	#footer-sidebar2 {padding: 0 20px;}
-	.wp-block-column {flex-basis: 50% !important;}
+	#footer-sidebar2 .wp-block-column {flex-basis: 50% !important;}
 	.blocks-gallery-grid, .wp-block-gallery {grid-gap: 10px;}
 	.blocks-gallery-grid .blocks-gallery-image,
 	.blocks-gallery-grid .blocks-gallery-item,
