@@ -227,7 +227,7 @@ function about_pop_get_excerpt( $args = array() ) {
 	// Default arguments.
 	$defaults = array(
 		'post'            => '',
-		'length'          => 60,
+		'length'          => 40,
 		'readmore'        => true,
 		'readmore_text'   => esc_html__( 'read more', 'text-domain' ),
 		'readmore_after'  => '',
@@ -273,8 +273,8 @@ function about_pop_get_excerpt( $args = array() ) {
 		else {
 
 			// Generate an excerpt from the post content.
-			//$output = wp_trim_words( strip_shortcodes( $post->post_content ), $length );
-			$output = $post->post_content;
+			$output = wp_trim_words( strip_shortcodes( $post->post_content ), $length );
+			//$output = $post->post_content;
 
 			// Add the readmore text to the excerpt if enabled.
 			if ( $readmore ) {
