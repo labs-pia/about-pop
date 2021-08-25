@@ -1202,15 +1202,6 @@ main {
 	height: 500px;
 }
 
-.has-background-dim h1.has-text-align-center::after {
-    right: 50px;
-    left: auto;
-}
-
-.wp-block-cover.has-background-dim-20.has-background-dim {
-    z-index: -1;
-}
-
 .blocks-gallery-grid, .wp-block-gallery {
     padding: 0;
     align-items: center;
@@ -1612,7 +1603,10 @@ width: 6.9em;
 	.wp-block-latest-posts__post-excerpt h3 {font-size: 1em;letter-spacing: 4px;}
 
 	.entry-content h1 {height: 250px; gap: 50px;}
-	.page-id-116 h2, .post-password-required h2, .post-password-protected h2 {
+	.page-id-116 h2,
+	.post-password-required h2,
+	.post-password-protected h2,
+	.post-content h2 {
 		letter-spacing: 10px;
 		font-size: 2em;
 	}
@@ -1621,7 +1615,10 @@ width: 6.9em;
 	    margin: 0;
 	    padding: 10px;
 	}
-	.page-id-116 .entry-content, .post-password-required .entry-content, .post-password-protected .entry-content {
+	.page-id-116 .entry-content,
+	.post-password-required .entry-content,
+	.post-password-protected .entry-content,
+	.post-content {
 	    padding: 20px;
 	    margin: 0;
 	}
@@ -1634,6 +1631,9 @@ width: 6.9em;
 	.wp-block-latest-posts.wp-block-latest-posts__list li {padding: 20px;}
 	.wp-block-latest-posts__featured-image.aligncenter {margin: -20px -20px 20px -20px;}
 	.wp-block-latest-posts li > a {font-size: 20px;}
+
+	.post-thumbnail img {height: 200px;}
+	.post-thumbnail {height: 200px;margin: -25px;}
 
 	#footer-sidebar2 {padding: 0 20px;}
 	#footer-sidebar2 .wp-block-column {flex-basis: 50% !important;}
