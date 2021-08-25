@@ -1165,6 +1165,8 @@ main {
 #footer-sidebar1 img {
     filter: grayscale(1);
     mix-blend-mode: multiply;
+    max-width: 300px;
+	margin: 0 auto;
 }
 
 #footer-sidebar1 img:hover {
@@ -1223,7 +1225,6 @@ main {
 	.wp-block-gallery.columns-3 .blocks-gallery-item {
 	    width: calc(33.33333% - 50px);
 	    margin-right: 0;
-	    max-width: 300px;
 	}
 }
 
