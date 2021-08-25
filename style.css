@@ -76,6 +76,7 @@ html {
  */
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /**
@@ -534,6 +535,7 @@ h3 {
     margin: 100px auto;
     max-width: 1024px;
     width: 33.33%;
+    overflow: hidden;
 }
 
 #about td, #pop td, #konferenz td {
@@ -782,7 +784,8 @@ input[type="submit"]:hover {
 }
 
 .wp-block-buttons>.wp-block-button {
-    margin: 50px auto;
+    margin: 20px auto;
+    height: 60px;
 }
 
 input[type="text"],
@@ -1509,9 +1512,7 @@ width: 6.9em;
 		letter-spacing: 55px;
 	}
 
-	.rcb-content-blocker {
-	    margin: 0 50px;
-	}
+	.rcb-content-blocker {margin: 0 50px;}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1572,23 +1573,19 @@ width: 6.9em;
 	}
 
 	#burger {top: -20px; right: -20px;}
-	#frame {
-	    border: 5px solid #DA1984;
-	    margin: 20px;
-	}
+	#frame {border: 5px solid #DA1984; margin: 20px;}
 	
-	.entry-header {
-    height: calc(100vh - 140px);
-	}
+	.entry-header {height: calc(100vh - 140px);}
 	.title_inforight {right: 0px;}
 	.title_infoleft {left: 0px;}
-	.title_infoleft td, .title_inforight td {font-size: 2em;}
+	.title_infoleft td, .title_inforight td {font-size: 28px;}
 	.home .entry-header h1 {
 		font-size: 3em;
    		width: 5.2em;
 	    letter-spacing: 40px;
 	}
-	#about, #pop, #konferenz {height: 300px;}
+	#about, #pop, #konferenz {height: 200px; margin: 50px auto;}
+	#about td, #pop td, #konferenz td {font-size: 3em;}
 
 	.wp-block-latest-posts__post-excerpt h1, 
 	.wp-block-latest-posts__post-excerpt h2, 
@@ -1597,12 +1594,17 @@ width: 6.9em;
 	.wp-block-latest-posts__post-excerpt h5 {word-break: break-word;}
 
 	.entry-content h1 {height: 250px; gap: 50px;}
-	.home #frame p {
+	.home .entry-content p {
 	    margin: 0;
 	    padding: 10px;
 	}
 
-	.wp-block-buttons {margin: 20px;}
+	.wp-block-buttons > .wp-block-button {margin: 0px auto;}
+	.wp-block-buttons {margin: 20px;height: 150px;}
+
+	.rcb-content-blocker {margin: 0 20px;}
+
+	.wp-block-latest-posts li > a {font-size: 20px;}
 
 	#footer-sidebar2 {padding: 0 20px;}
 	.wp-block-column {flex-basis: 50% !important;}
