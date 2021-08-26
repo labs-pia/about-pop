@@ -58,6 +58,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Document
 	 ========================================================================== */
+@font-face {
+  font-family: 'Frutiger';
+    /* path to fonts */
+    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
+         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/myfont.Ftr____.ttf') format('truetype'); /* older browsers */
+    letter-spacing: 1px;
+    font-weight: normal !important;
+}
+
+@font-face {
+  font-family: 'Work-bold';
+    /* path to fonts */
+    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
+         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.ttf') format('truetype'); /* older browsers */
+    letter-spacing: 1px;
+    font-weight: normal !important;
+}
+
+@font-face {
+  font-family: 'Work-black';
+    /* path to fonts */
+    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
+         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.ttf') format('truetype'); /* older browsers */
+    letter-spacing: 1px;
+    font-weight: normal !important;
+}
+
 
 /**
  * 1. Correct the line height in all browsers.
@@ -143,7 +173,7 @@ abbr[title] {
 b, strong {
     font-weight: bolder;
     text-decoration: none;
-    font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     color: #000;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -447,7 +477,7 @@ h3,
 h4,
 h5,
 h6 {
-	font: 8em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+	font: 8em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
 	clear: both;
     margin: 0 auto;
     font-weight: 800;
@@ -479,7 +509,7 @@ h6 {
 
 .title_infoleft td,
 .title_inforight td {
-	font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+	font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     font-size: 4em;
     width: 0.8em;
     line-height: 1;
@@ -517,7 +547,7 @@ h3 {
     margin: 0.5em auto;
     color: #000;
     word-break: break-word;
-    font: 1.5em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font: 1.5em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -539,7 +569,7 @@ h3 {
 }
 
 #about td, #pop td, #konferenz td {
-	font: 8em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+	font: 8em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     clear: both;
     margin: 0 auto;
     font-weight: 800;
@@ -677,7 +707,7 @@ table {
 
 a, a:visited {
     text-decoration: none;
-    font: 1.5em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font: 1.5em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     color: #da1984;
     letter-spacing: 7px;
     text-transform: uppercase;
@@ -897,7 +927,7 @@ textarea {
 .main-navigation a {
 	clear: both;
     margin: 0 auto;
-    font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #fff;
@@ -910,7 +940,7 @@ textarea {
 }
 
 .main-navigation a {
-    font: 3em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font: 3em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     clear: both;
     margin: 0 auto;
     font-weight: 800;
@@ -1077,7 +1107,7 @@ textarea {
 .wp-block-latest-posts li > a {
     color: #000000;
     clear: both;
-    font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 1.3;
@@ -1136,7 +1166,7 @@ textarea {
 
 #footer-sidebar2 p,
 #footer-sidebar2 a {
-	font-family: "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+	font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     color: #fff;
     font-size: 1em;
     letter-spacing: 3px;
@@ -1453,7 +1483,7 @@ width: 6.9em;
 .page-id-96 h2,
 .page-id-3 h4,
 .page-id-96 h4 {
-    font: 2em/1.3 "Work Sans", Helvetica, Roboto, Arial, sans-serif;
+    font: 2em/1.3 "Work-bold", Helvetica, Roboto, Arial, sans-serif;
     color: #da1984;
     width: 100%;
     letter-spacing: 5px;
