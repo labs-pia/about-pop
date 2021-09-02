@@ -60,22 +60,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	 ========================================================================== */
 @font-face {
   font-family: 'Frutiger';
-    src: url(/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.woff) format('woff') /* Pretty Modern Browsers */
-         url(/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.woff2) format('woff2') /*iOS */
-         url(/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.ttf) format('truetype'); /* older browsers */
+    src: url(/assets/fonts/NeueFrutigerWorld-Regular.woff) format('woff') /* Pretty Modern Browsers */
+         url(/assets/fonts/NeueFrutigerWorld-Regular.woff2) format('woff2') /*iOS */
+         url(/assets/fonts/NeueFrutigerWorld-Regular.ttf) format('truetype'); /* older browsers */
 }
 
 @font-face {
   font-family: 'Work-bold';
-    src: url(/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.woff2) format('woff2') /*iOS */
-         url(/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.ttf) format('truetype') /* older browsers */
-		 url(/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.otf) format('opentype');
+    src: url(/assets/fonts/WorkSans-Bold.woff2) format('woff2') /*iOS */
+         url(/assets/fonts/WorkSans-Bold.ttf) format('truetype') /* older browsers */
+		 url(/assets/fonts/WorkSans-Bold.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'Work-black';
-    src: url(/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.woff2) format('woff2') /*iOS */
-         url(/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.ttf) format('truetype') /* older browsers */
+    src: url('/assets/fonts/WorkSans-Black.woff2') format('woff2') /*iOS */
+         url('/assets/fonts/WorkSans-Black.ttf') format('truetype') /* older browsers */
          url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.otf') format('opentype');
 }
 
