@@ -690,6 +690,18 @@ figure {
 table {
 	margin: 0;
 	width: 100%;
+	background-color: #fff;
+	max-width: 1024px;
+	margin: 1em auto;
+	box-shadow: 0px 5px 5px #00000042;
+}
+
+td {
+    padding: 0.5em;
+}
+
+tr {
+    box-shadow: 0px 2px 5px #f7f7f7;
 }
 
 /* Links
