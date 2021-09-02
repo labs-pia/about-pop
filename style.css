@@ -59,24 +59,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Document
 	 ========================================================================== */
 @font-face {
-  font-family: 'Frutiger';
+  font-family: Frutiger;
     src: url(/assets/fonts/NeueFrutigerWorld-Regular.woff) format('woff') /* Pretty Modern Browsers */
          url(/assets/fonts/NeueFrutigerWorld-Regular.woff2) format('woff2') /*iOS */
          url(/assets/fonts/NeueFrutigerWorld-Regular.ttf) format('truetype'); /* older browsers */
 }
 
 @font-face {
-  font-family: 'Work-bold';
+  font-family: Work-bold;
     src: url(/assets/fonts/WorkSans-Bold.woff2) format('woff2') /*iOS */
          url(/assets/fonts/WorkSans-Bold.ttf) format('truetype') /* older browsers */
 		 url(/assets/fonts/WorkSans-Bold.otf) format('opentype');
 }
 
 @font-face {
-  font-family: 'Work-black';
-    src: url('/assets/fonts/WorkSans-Black.woff2') format('woff2') /*iOS */
-         url('/assets/fonts/WorkSans-Black.ttf') format('truetype') /* older browsers */
-         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.otf') format('opentype');
+  font-family: Work-black;
+    src: url(/assets/fonts/WorkSans-Black.woff2) format('woff2') /*iOS */
+         url(/assets/fonts/WorkSans-Black.ttf) format('truetype') /* older browsers */
+         url(/assets/fonts/WorkSans-Black.otf) format('opentype');
 }
 
 
@@ -164,7 +164,7 @@ abbr[title] {
 b, strong {
     font-weight: bolder;
     text-decoration: none;
-    font-family: "Work-bold", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Work-black, Work-bold, Helvetica, sans-serif;
     color: #000;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -468,7 +468,7 @@ h3,
 h4,
 h5,
 h6 {
-	font: 8em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
+	font: 8em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
 	clear: both;
     margin: 0 auto;
     font-weight: 800;
@@ -499,7 +499,7 @@ h6 {
 
 .title_infoleft td,
 .title_inforight td {
-	font-family: "Work-black", "Work-bold", Helvetica, sans-serif;
+	font-family: Work-black, Work-bold, Helvetica, sans-serif;
     font-size: 4em;
     width: 0.8em;
     line-height: 1;
@@ -537,7 +537,7 @@ h3 {
     margin: 0.5em auto;
     color: #000;
     word-break: break-word;
-    font: 1.5em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
+    font: 1.5em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
     font-weight: 400;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -559,7 +559,7 @@ h3 {
 }
 
 #about td, #pop td, #konferenz td {
-	font: 8em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
+	font: 8em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
     clear: both;
     margin: 0 auto;
     font-weight: 800;
@@ -697,7 +697,7 @@ table {
 
 a, a:visited {
     text-decoration: none;
-    font: 1.5em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
+    font: 1.5em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
     color: #da1984;
     letter-spacing: 7px;
     text-transform: uppercase;
@@ -917,26 +917,15 @@ textarea {
 .main-navigation a {
 	clear: both;
     margin: 0 auto;
-    font-family: "Work-black", "Work-bold", Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: Work-black, Work-bold, Helvetica, sans-serif;
+    font-weight: 800;
     color: #fff;
-    font-size: 2em;
-    letter-spacing: 8px;
+    font-size: 3em;
+    letter-spacing: 5px;
     line-height: 1;
     text-transform: uppercase;
 	display: block;
 	text-decoration: none;
-}
-
-.main-navigation a {
-    font: 3em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
-    clear: both;
-    margin: 0 auto;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 5px;
-    text-transform: uppercase;
 }
 
 .menu-toggle {
@@ -1097,7 +1086,7 @@ textarea {
 .wp-block-latest-posts li > a {
     color: #000000;
     clear: both;
-    font-family: "Work-black", "Work-bold", Helvetica, sans-serif;
+    font-family: Work-black, Work-bold, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 1.3;
@@ -1156,7 +1145,7 @@ textarea {
 
 #footer-sidebar2 p,
 #footer-sidebar2 a {
-	font-family: "Work-black", "Work-bold", Helvetica, sans-serif;
+	font-family: Work-black, Work-bold, Helvetica, sans-serif;
     color: #fff;
     font-size: 1em;
     letter-spacing: 3px;
@@ -1473,7 +1462,7 @@ width: 6.9em;
 .page-id-96 h2,
 .page-id-3 h4,
 .page-id-96 h4 {
-    font: 2em/1.3 "Work-black", "Work-bold", Helvetica, sans-serif;
+    font: 2em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
     color: #da1984;
     width: 100%;
     letter-spacing: 5px;
