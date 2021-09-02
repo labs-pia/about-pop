@@ -61,9 +61,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'Frutiger';
     /* path to fonts */
-    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
-         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
-         url('/wp-content/themes/about-pop/assets/fonts/myfont.Ftr____.ttf') format('truetype'); /* older browsers */
+    src: url('/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.woff') format('woff') /* Pretty Modern Browsers */
+         url('/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.woff2') format('woff2') /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/NeueFrutigerWorld-Regular.ttf') format('truetype'); /* older browsers */
     letter-spacing: 1px;
     font-weight: normal !important;
 }
@@ -71,9 +71,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'Work-bold';
     /* path to fonts */
-    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
-         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
-         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.ttf') format('truetype'); /* older browsers */
+    src: url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.woff2') format('woff2') /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.ttf') format('truetype') /* older browsers */
+		 url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Bold.otf') format('opentype');
     letter-spacing: 1px;
     font-weight: normal !important;
 }
@@ -81,9 +81,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'Work-black';
     /* path to fonts */
-    src: url('/wp-content/themes/about-pop/assets/fonts/myfont.woff') format('woff'); /* Pretty Modern Browsers */
-         url('/wp-content/themes/about-pop/assets/fonts/myfont.woff2') format('woff2'); /*iOS */
-         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.ttf') format('truetype'); /* older browsers */
+    src: url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.woff2') format('woff2') /*iOS */
+         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.ttf') format('truetype') /* older browsers */
+         url('/wp-content/themes/about-pop/assets/fonts/WorkSans-Black.otf') format('opentype');
     letter-spacing: 1px;
     font-weight: normal !important;
 }
