@@ -718,12 +718,17 @@ table.has-fixed-layout {
     font-size: 14px;
 }
 
-.has-fixed-layout td a:first-child {
+.has-fixed-layout tr:first-child td a {
     color: #da1984;
     font-family: work-black, work-bold;
     text-transform: uppercase;
     letter-spacing: 7px;
     font-size: 1.5em;
+}
+
+.has-fixed-layout td a,
+.has-fixed-layout tr:first-child td a:hover {
+    color: #000;
 }
 
 /* Links
