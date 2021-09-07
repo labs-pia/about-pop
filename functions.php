@@ -164,7 +164,6 @@ function about_pop_scripts() {
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-js', get_template_directory_uri() . '/js/jquery-min.js', _S_VERSION, '1.0', true);
-	wp_enqueue_script('jquery-1.11.1.-js', get_template_directory_uri() . '/js/jquery-1.11.1.min.js', array(), '1.11.1.', true);
 	wp_enqueue_script('jquery.mobile-js', get_template_directory_uri() . '/js/jquery.mobile-1.4.5.min.js', array('jquery-1.11.1.-js'), '1.4.5.', true);
 	wp_enqueue_script('about-pop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
