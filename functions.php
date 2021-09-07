@@ -159,8 +159,7 @@ add_action( 'widgets_init', 'about_pop_widgets_init' );
  */
 function about_pop_scripts() {
 	wp_enqueue_style( 'about-pop-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'jquery-mobile-struct-style', get_template_directory_uri() . '/assets/css/jquery.mobile.structure.css',array(), '1.5', 'all' );
-	wp_enqueue_style( 'jquery-mobile-theme-style', get_template_directory_uri() . '/assets/css/jquery.mobile.theme.css',array(), '1.5', 'all' );
+	wp_enqueue_style( 'jquery-mobile-theme-style', get_template_directory_uri() . '/assets/css/jquery.mobile.css',array(), '1.5', 'all' );
 	wp_style_add_data( 'about-pop-style', 'rtl', 'replace' );
 
 	wp_enqueue_script('jquery');
