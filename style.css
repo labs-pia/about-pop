@@ -1603,6 +1603,11 @@ width: 6.9em;
 		top: 30px;
 		right: 0;
 	}
+
+	.wp-block-buttons {
+	    margin-right: 0;
+	    margin-bottom: 50px;
+	}
 }
 
 /* mobil */
