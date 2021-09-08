@@ -1224,6 +1224,10 @@ main {
     mix-blend-mode: normal;
 }
 
+.ui-loader {
+    display: none;
+}
+
 /* Media
 --------------------------------------------- */
 .page-content .wp-smiley,
