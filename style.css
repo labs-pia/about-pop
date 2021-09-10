@@ -488,8 +488,8 @@ h6 {
 }
 
 .home .entry-header h1 {
-	font-size: 9em;
-    width: 3.7em;
+	font-size: 7em;
+    width: 3.8em;
     letter-spacing: 55px;
     transform: translate(-50%, -50%);
 	top: 50%;
@@ -1102,6 +1102,19 @@ textarea {
     padding: 0.5em 1em;
 }
 
+#table td:first-child {
+    width: 80px;
+}
+
+#table a, #table a strong {
+    color: #da1984;
+    transition: 300ms;
+}
+
+#table a:hover, #table a strong:hover {
+    color: #000;
+    transition: 300ms;
+}
 
 /* PDF Programmübersicht */
 .programm img {
