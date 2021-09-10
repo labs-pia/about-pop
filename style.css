@@ -497,6 +497,12 @@ h6 {
 	left: 53%;
 }
 
+#post-116 {
+    font-size: 6.5em;
+    width: 7em;
+    letter-spacing: 35px;
+}
+
 .title_infoleft td,
 .title_inforight td {
 	font-family: Work-black, Work-bold, Helvetica, sans-serif;
@@ -1627,6 +1633,13 @@ width: 6.9em;
 		top: 30px;
 		right: 0;
 	}
+
+	#table {
+	    margin: 0 0 -50px 0;
+	}
+	#post-116 {
+	    width: 5.8em;
+	}
 }
 
 /* mobil */
@@ -1649,6 +1662,10 @@ width: 6.9em;
 	}
 	.page-id-3 .entry-header {
 		display: none;
+	}
+
+	#post-116 {
+	    width: 6em;
 	}
 	.title_inforight {right: 0px;}
 	.title_infoleft {left: 0px;}
