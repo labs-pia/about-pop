@@ -1093,6 +1093,16 @@ textarea {
     transition: 400ms;
 }
 
+#table {
+	margin: 0 50px;
+    background-color: #fff;
+}
+
+#table td {
+    padding: 0.5em 1em;
+}
+
+
 /* PDF Programmübersicht */
 .programm img {
     box-shadow: 0px 5px 5px #00000042;
