@@ -489,7 +489,7 @@ h6 {
 
 .home .entry-header h1 {
 	font-size: 7em;
-    width: 3.8em;
+    width: 3.9em;
     letter-spacing: 55px;
     transform: translate(-50%, -50%);
 	top: 50%;
@@ -1115,6 +1115,7 @@ textarea {
 #table a, #table a strong {
     color: #da1984;
     transition: 300ms;
+    font-size: 1em;
 }
 
 #table a:hover, #table a strong:hover {
@@ -1639,6 +1640,10 @@ width: 6.9em;
 	}
 	#post-116 .entry-title{
 	    width: 5.8em;
+	}
+
+	#table {
+		display:  none;
 	}
 }
 
