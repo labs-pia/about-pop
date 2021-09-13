@@ -1752,7 +1752,6 @@ width: 6.9em;
 	.post-thumbnail {height: 200px;margin: -25px;}
 
 	#footer-sidebar2 {padding: 0 20px;}
-	#footer-sidebar2 .wp-block-column {flex-basis: 50% !important;}
 	.blocks-gallery-grid, .wp-block-gallery {grid-gap: 10px;}
 	.blocks-gallery-grid .blocks-gallery-image,
 	.blocks-gallery-grid .blocks-gallery-item,
