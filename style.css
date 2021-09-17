@@ -492,6 +492,10 @@ h6 {
     width: 3.9em;
     letter-spacing: 55px;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	top: 50%;
 	position: absolute;
 	left: 53%;
