@@ -21,7 +21,6 @@ function open() {
   menu.style.width = "100vw";
   menu.style.margin = "auto";
   menu.style.padding = "0";
-  menu.style.height = "70vh";
   menu.style.flexDirection = "column";
 
   schalter = true;
