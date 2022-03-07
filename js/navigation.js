@@ -32,17 +32,18 @@ function close() {
   setTimeout("siteNavigation.style.height = '100px';", 280);
   let mql = window.matchMedia('(max-width: 768px)');
   console.log(mql);
+    if (mql.matches) { // If media query matches
+      setTimeout("siteNavigation.style.height = '70px';", 280);
+    } else {
+      setTimeout("siteNavigation.style.height = '100px';", 280);
+    };
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
 };
 
 /*
 
-    if (window.matchMedia("(max-width: 768px)").matches) { // If media query matches
-      setTimeout("siteNavigation.style.height = '70px';", 280);
-    } else {
-      setTimeout("siteNavigation.style.height = '100px';", 280);
-    }
+
 
 
 var x = 
