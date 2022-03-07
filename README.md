@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-=== About-Pop ===
+About-Pop
 ===
 
 Contributors: automattic
@@ -16,7 +16,7 @@ License URI: LICENSE
 A starter theme called About-Pop.
 
 
-== Installation ==
+Installation
 ---------------
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
@@ -29,13 +29,19 @@ A starter theme called About-Pop.
 
 About-Pop includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
-== Changelog ==
+Changelog
 ---------------
+
+= 1.0 - Mar 7 2022 =
+* Design-Update for 2022
+
+= 1.0 - Aug 11 2021 =
+* Design for About-Pop
 
 = 1.0 - May 12 2015 =
 * Initial release
 
-== Credits ==
+Credits
 ---------------
 
 * Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
