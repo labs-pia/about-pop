@@ -30,9 +30,39 @@ function close() {
   siteNavigation.classList.remove('openanimation');
   siteNavigation.classList.add('closeanimation');
   setTimeout("siteNavigation.style.height = '100px';", 280);
+  let mql = window.matchMedia('(max-width: 768px)');
+  console.log(mql);
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
 };
+
+/*
+
+    if (window.matchMedia("(max-width: 768px)").matches) { // If media query matches
+      setTimeout("siteNavigation.style.height = '70px';", 280);
+    } else {
+      setTimeout("siteNavigation.style.height = '100px';", 280);
+    }
+
+
+var x = 
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      setTimeout("siteNavigation.style.height = '100px';", 280);
+    } else {
+      setTimeout("siteNavigation.style.height = '70px';", 280);
+    }
+  }
+
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+*/
 
 
 // Smooth scoller
