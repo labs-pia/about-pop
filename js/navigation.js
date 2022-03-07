@@ -13,7 +13,7 @@ button.onclick = function () {
 
 function open() {
   siteNavigation.classList.remove='closeanimation';
-  siteNavigation.className='openanimation';
+  siteNavigation.classList.add='openanimation';
   setTimeout("siteNavigation.style.height = '100vh';", 280);
   menu.style.display = 'flex';
   setTimeout("menu.style.height = '100vh';", 150);
@@ -29,7 +29,7 @@ function open() {
 
 function close() {
   siteNavigation.classList.remove='openanimation';
-  siteNavigation.className='closeanimation';
+  siteNavigation.classList.add='closeanimation';
   setTimeout("siteNavigation.style.height = '100px';", 280);
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
