@@ -534,7 +534,7 @@ h6 {
 
 .title_infoleft {
     position: absolute;
-    left: 11px;
+    left: 3px;
     top: 50%;
 	transform: translateY(-50%);
 }
