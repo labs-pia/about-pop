@@ -1,5 +1,5 @@
 const siteNavigation = document.getElementById( 'site-navigation' );
-const button = siteNavigation.getElementById( 'burger' );
+const button = document.getElementById( 'burger' );
 const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 var schalter = false;
 
