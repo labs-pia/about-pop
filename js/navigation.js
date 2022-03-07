@@ -29,11 +29,20 @@ function open() {
 function close() {
   siteNavigation.classList.remove('openanimation');
   siteNavigation.classList.add('closeanimation');
-  setTimeout("siteNavigation.style.height = '100px';", 280);
+  function myFunction(size) {
+    if (size.matches) { // If media query matches
+      setTimeout("siteNavigation.style.height = '100px';", 280);
+    } else {
+      setTimeout("siteNavigation.style.height = '70px';", 280);
+    }
+  }
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
 };
 
+var size = window.matchMedia("(max-width: 768px)")
+myFunction(size) // Call listener function at run time
+size.addListener(myFunction) // Attach listener function on state changes 
 
 // Smooth scoller
 // by clicking on a menu item, the function handles the href attribute and scrolls to it
