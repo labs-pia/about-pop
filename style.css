@@ -1229,6 +1229,8 @@ textarea {
 
 .page-id-145 .wp-block-latest-posts__featured-image img {
 	height: 250px;
+	position: relative;
+	top: 250px;
 }
 
 .page-id-145 .wp-block-latest-posts__list.is-grid.columns-5.wp-block-latest-posts li a {
