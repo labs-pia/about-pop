@@ -1001,6 +1001,56 @@ textarea {
 }
 */
 
+/* animation */
+@-keyframes open {
+  0% { height: 0vh; }
+  100% { height: 100vh;}
+}
+
+@-keyframes close {
+  0% { height: 100vh; }
+  100% { height: 100px;}
+}
+
+/* safari webkit */
+@-webkit-keyframes open {
+    0% { height: 0vh; }
+    100% { height: 100vh;}
+}
+
+@-webkit-keyframes close {
+    0% { height: 100vh; }
+    100% { height: 100px;}
+}
+
+.openanimation {
+	-webkit-animation-name: open;
+	-moz-animation-name: open;
+	-ms-animation-name: open;
+	-o-animation-name: open;
+	animation-name: open;
+
+	-webkit-animation-duration: 300ms;
+	-moz-animation-duration: 300ms;
+	-ms-animation-duration: 300ms;
+	-o-animation-duration: 300ms;
+	animation-duration: 300ms;
+}
+
+.closeanimation {
+	-webkit-animation-name: close;
+	-moz-animation-name: close;
+	-ms-animation-name: close;
+	-o-animation-name: close;
+	animation-name: close;
+
+	-webkit-animation-duration: 300ms;
+	-moz-animation-duration: 300ms;
+	-ms-animation-duration: 300ms;
+	-o-animation-duration: 300ms;
+	animation-duration: 300ms;
+}
+
 .main-navigation ul {
 	display: flex;
 	align-items: center;
