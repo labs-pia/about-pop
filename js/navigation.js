@@ -16,7 +16,7 @@ function open() {
   siteNavigation.classList.add('openanimation');
   setTimeout("siteNavigation.style.height = '100vh';", 280);
   menu.style.display = 'flex';
-  setTimeout("menu.style.height = '100vh';", 150);
+  setTimeout("menu.style.height = '100vh';", 280);
   setTimeout("menu.style.display = 'flex';", 150);
   menu.style.width = "100vw";
   menu.style.margin = "auto";

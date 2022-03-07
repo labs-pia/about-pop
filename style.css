@@ -979,6 +979,8 @@ textarea {
     width: 100%;
     background-color: var(--primary);
     height: 100px;
+    z-index: 2;
+	position: absolute;
 }
 
 .main-navigation a {
