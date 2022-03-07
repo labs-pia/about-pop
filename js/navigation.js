@@ -23,10 +23,10 @@ function open() {
   }, 300);
   setTimeout("menu.style.display = 'flex';", 150);
   menu.style.width = "100vw";
-  menu.style.margin = "25vh auto";
-  menu.style.height = "50vh";
+  menu.style.margin = "auto";
+  menu.style.padding = "0";
+  menu.style.height = "70vh";
   menu.style.flexDirection = "column";
-  menu.style.justifyContent = "space-between";
 
   schalter = true;
 }
@@ -35,7 +35,7 @@ function close() {
   siteNavigation.animate({
     "height":"100px"
   }, 300);
-  setTimeout("siteNavigation.style.height = '70px';", 280);
+  setTimeout("siteNavigation.style.height = '100px';", 280);
 	
   menu.animate({
     "display":"none"
