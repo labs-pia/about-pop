@@ -1058,7 +1058,7 @@ textarea {
 	justify-content: space-around;
 	margin: 0 50px 0 275px;
 	list-style: none;
-	display: none;
+	/*display: none;*/
 }
 
 #burger {

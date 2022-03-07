@@ -99,21 +99,3 @@ function close() {
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
 };
-
-
-// Smooth scoller
-// by clicking on a menu item, the function handles the href attribute and scrolls to it
-//
-
-$('#primary-menu a ').click(function() {
-  var p = $(this).attr('href');
-  p = p.replace("/", "");
-  
-  $('html, body').animate({
-    scrollTop : $(p).position().top
-  },1000);
-  if (schalter == true) {
-    close();
-  }
-});
-
