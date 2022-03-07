@@ -1,12 +1,11 @@
 const siteNavigation = document.getElementById( 'site-navigation' );
-const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+const button = siteNavigation.getElementById( 'burger' );
 const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 var schalter = false;
 
 button.onclick = function () {
   if (schalter == false) {
     open();
-    schalter = true;
   } else if (schalter == true) {
     close();
     }
@@ -99,3 +98,4 @@ function close() {
   setTimeout("menu.style.display = 'none';", 100);
   schalter = false;
 };
+*/
