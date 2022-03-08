@@ -20,6 +20,7 @@ function open() {
   menu.style.width = "100vw";
   menu.style.margin = "auto";
   menu.style.padding = "50px 20px";
+  menu.style.flexDirection = "column";
 
   schalter = true;
 };
