@@ -17,10 +17,9 @@ function open() {
   setTimeout("siteNavigation.style.height = '100vh';", 280);
   menu.style.display = 'flex';
   setTimeout("menu.style.height = '100vh';", 280);
-  setTimeout("menu.style.display = 'flex';", 150);
   menu.style.width = "100vw";
   menu.style.margin = "auto";
-  menu.style.padding = "0";
+  menu.style.padding = "50px 20px";
   menu.style.flexDirection = "column";
 
   schalter = true;
