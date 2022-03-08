@@ -1114,7 +1114,7 @@ textarea {
 .post-thumbnail {
     height: 500px;
 	box-shadow: 0px 5px 5px #00000040;
-	margin: -60px;
+	margin: -60px -60px -100px -60px;
 }
 
 .post-thumbnail img {
@@ -1130,7 +1130,7 @@ textarea {
 
 .post-content {
 	background-color: #fff;
-    margin: -50px 50px 50px 50px;
+    margin: 50px;
     box-shadow: 0px 5px 5px #00000040;
 	padding: 50px;
 }
