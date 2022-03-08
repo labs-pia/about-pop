@@ -1266,29 +1266,29 @@ textarea {
 }
 
 /* latest posts update kachelansicht */
-.page-id-145 .wp-block-latest-posts__list.is-grid.columns-5.wp-block-latest-posts {
+..wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
 	padding: 0 50px;
 }
 
-.page-id-145 .wp-block-latest-posts__list.is-grid.columns-5.wp-block-latest-posts li {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li {
 	margin: 0 25px 50px 25px;
 	padding: 25px;
 	height: 500px;
 	width: 300px;
 }
 
-.page-id-145 .wp-block-latest-posts__featured-image.aligncenter {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image.aligncenter {
 	margin: -25px -25px 25px -25px;
 	height: 250px;
 }
 
-.page-id-145 .wp-block-latest-posts__featured-image img {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image img {
 	height: 250px;
 	position: relative;
 	top: 250px;
 }
 
-.page-id-145 .wp-block-latest-posts__list.is-grid.columns-5.wp-block-latest-posts li a {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a {
 	top: -250px;
 	position: relative;
 	z-index: 1;
@@ -1297,7 +1297,7 @@ textarea {
 	display: block;
 }
 
-.page-id-145 .wp-block-latest-posts__post-excerpt {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
 	margin-top: .5em;
 	margin-bottom: 1em;
 	position: relative;
