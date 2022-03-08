@@ -1055,9 +1055,13 @@ textarea {
 
 .main-navigation ul {
 	align-items: center;
-	height: 100px;
 	justify-content: space-around;
+	text-align: center;
+	flex-direction: column;
+	/* 
+	height: 100px;
 	margin: 0 50px 0 275px;
+	*/
 	list-style: none;
 	display: none;
 }
