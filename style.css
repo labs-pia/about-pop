@@ -1268,7 +1268,7 @@ textarea {
 
 /* latest posts update kachelansicht */
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
-	padding: 0 50px;
+	padding: 50px 25px;
 }
 
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li {
@@ -1281,12 +1281,14 @@ textarea {
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image.aligncenter {
 	margin: -25px -25px 25px -25px;
 	height: 250px;
+	background-color: #000;
 }
 
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image img {
 	height: 250px;
 	position: relative;
 	top: 250px;
+	opacity: 0.6;
 }
 
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a {
