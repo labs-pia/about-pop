@@ -1296,7 +1296,7 @@ textarea {
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image img {
 	height: 250px;
 	position: relative;
-	top: 250px;
+	top: 0px;
 	opacity: 0.6;
 }
 
@@ -1307,6 +1307,10 @@ textarea {
 	color: #fff;
 	height: 250px;
 	display: block;
+}
+
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a:first-child {
+	top: 0;
 }
 
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
