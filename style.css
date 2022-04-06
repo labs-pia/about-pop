@@ -1114,6 +1114,13 @@ textarea {
 	flex: 1 0 50%;
 }
 
+#pojo-a11y-toolbar a {
+	font-family: serif;
+	letter-spacing: 0;
+	text-transform: none;
+	font-size: 16px !important;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
