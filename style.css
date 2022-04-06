@@ -1776,6 +1776,7 @@ width: 6.9em;
 
 	#pojo-a11y-toolbar {
 		top: 70px !important;
+		margin-top: 20px;
 	}
 
 	#table {
