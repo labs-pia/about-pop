@@ -1774,6 +1774,10 @@ width: 6.9em;
 		right: 0;
 	}
 
+	#pojo-a11y-toolbar {
+		top: 70px !important;
+	}
+
 	#table {
 	    margin: 0 0 -50px 0;
 	}
