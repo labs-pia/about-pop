@@ -1903,4 +1903,8 @@ width: 6.9em;
 	.wp-block-gallery .blocks-gallery-image,
 	.wp-block-gallery .blocks-gallery-item {width: calc(50% - 20px);}
 	#footer-sidebar1 {padding: 25px;}
+
+	.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
+		padding: 0;
+	}
 }
