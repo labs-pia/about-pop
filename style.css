@@ -1114,13 +1114,6 @@ textarea {
 	flex: 1 0 50%;
 }
 
-#pojo-a11y-toolbar a {
-	font-family: serif;
-	letter-spacing: 0;
-	text-transform: none;
-	font-size: 16px !important;
-}
-
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1587,6 +1580,13 @@ main {
 /* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
 	outline: 0;
+}
+
+.pojo-a11y-toolbar-overlay a {
+	font-family: serif;
+	letter-spacing: 0;
+	text-transform: none;
+	font-size: 16px !important;
 }
 
 /* Alignments
