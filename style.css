@@ -1241,7 +1241,7 @@ textarea {
     transition: 250ms;
 }
 
-.wp-block-latest-posts__featured-image img:hover {
+.wp-block-latest-posts li:hover img {
     filter: none;
 }
 
