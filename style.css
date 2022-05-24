@@ -1852,8 +1852,8 @@ width: 6.9em;
 	    text-align: center;
 	}
 	.page-id-3 #primary, .page-id-96 #primary {margin: 0px;}
-	#about, #pop, #konferenz {height: 200px; margin: 50px auto;}
-	#about td, #pop td, #konferenz td {font-size: 3em;}
+	#about, #pop, #konferenz, #festival {height: 200px; margin: 50px auto;}
+	#about td, #pop td, #konferenz td, #festival td {font-size: 3em;}
 
 	.wp-block-latest-posts__post-excerpt h1, 
 	.wp-block-latest-posts__post-excerpt h2, 
