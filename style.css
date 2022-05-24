@@ -1326,6 +1326,15 @@ textarea {
 	display: block;
 }
 
+select {
+	color: var(--primary);
+	background-color: #fff;
+	border: 5px solid var(--primary);
+	margin: 0 auto;
+	display: block;
+	padding: 0.5em 1em;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
