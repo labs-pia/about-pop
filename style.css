@@ -1917,6 +1917,6 @@ width: 6.9em;
 	#footer-sidebar1 {padding: 25px;}
 
 	.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
-		padding: 0;
+		padding: 25px 0 0 0;
 	}
 }
