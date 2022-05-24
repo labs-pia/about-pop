@@ -1318,7 +1318,7 @@ textarea {
 	font-size: 4em;
 	width: 80%;
 	letter-spacing: 5px;
-	margin: 50px;
+	margin: 50px 50px 50px 100px;
 }
 
 .archive .post-thumbnail {
