@@ -1124,9 +1124,11 @@ textarea {
 	color: #fff;
 	position: absolute;
 	top: calc(50% + 300px);
-	left: 0;
+	left: calc(50% - 280px);
 	letter-spacing: 4px;
 	text-align: center;
+	width: 560px;
+	word-break: break-word;
 }
 
 /* Posts and pages
