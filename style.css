@@ -1822,7 +1822,7 @@ width: 6.9em;
 	}
 }
 
-/* mobil */
+
 @media only screen and (max-width: 767px) {
 	.custom-logo-link {
 	    width: 100px;
@@ -1955,4 +1955,10 @@ width: 6.9em;
 	.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
 		padding: 25px 0 0 0;
 	}
+}
+
+/* mobil */
+@media only screen and (max-width: 400px) {
+	.title_infoleft {left: 0;}
+	.title_inforight {right: -3px;}
 }
