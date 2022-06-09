@@ -21,7 +21,6 @@ function open() {
   menu.style.margin = "0";
   menu.style.padding = "70px 0 0 0";
   menu.style.flexDirection = "column";
-
   schalter = true;
 };
 
