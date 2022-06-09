@@ -496,7 +496,7 @@ h6 {
 
 /* webtitle */
 .entry-header {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 100px);
     color: #fff;
     text-transform: uppercase;
     padding-top: 70px;
@@ -534,14 +534,13 @@ h6 {
 
 .title_infoleft {
     position: absolute;
-    left: 3px;
     top: 50%;
 	transform: translateY(-50%);
 }
 
 .title_inforight {
 	position: absolute;
-    right: 3px;
+    right: 65px;
     top: 50%;
 	transform: translateY(-50%);
 }

@@ -18,8 +18,8 @@ function open() {
   menu.style.display = 'flex';
   setTimeout("menu.style.height = '100vh';", 280);
   menu.style.width = "100vw";
-  menu.style.margin = "auto";
-  menu.style.padding = "50px 20px";
+  menu.style.margin = "0";
+  menu.style.padding = "70px 0 0 0";
   menu.style.flexDirection = "column";
 
   schalter = true;
