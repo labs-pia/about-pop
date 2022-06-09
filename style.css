@@ -1766,6 +1766,7 @@ width: 6.9em;
 @media only screen and (max-width: 1024px) {
 	#about td, #pop td, #konferenz td, #festival td {font-size: 6em;}
 	#about, #pop, #konferenz, #festival {width: 50%;}
+	.title_infoleft td, .title_inforight td {font-size: 2em;}
 }
 
 
@@ -1858,12 +1859,17 @@ width: 6.9em;
 		display: none;
 	}
 
-	#post-116 .entry-title {
-	    width: 6em;
+	/* Startseite */
+	#post-116 .entry-title {width: 6em;}
+	.subtitle {
+		top: calc(50% + 160px);
+		width: 400px;
+		left: calc(50% - 200px);
+		word-break: break-word;
+		font-size: 1.8em;
 	}
-	.title_inforight {right: 0px;}
-	.title_infoleft {left: 0px;}
-	.title_infoleft td, .title_inforight td {font-size: 28px;}
+	.title_inforight {right: 30px;}
+	.title_infoleft td, .title_inforight td {font-size: 1.8em;}
 	.home .entry-header h1 {
 		font-size: 3em;
    		width: 5.2em;
