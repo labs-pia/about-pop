@@ -1766,7 +1766,7 @@ width: 6.9em;
 }
 
 @media only screen and (max-width: 1024px) {
-	#about td, #pop td, #konferenz td, #festival td {font-size: 6em;}
+	.home figure.tableheadline td, #about td, #pop td, #konferenz td, #festival td {font-size: 6em;}
 	#about, #pop, #konferenz, #festival {width: 50%;}
 	.title_infoleft td, .title_inforight td {font-size: 2em;}
 }
