@@ -1961,4 +1961,5 @@ width: 6.9em;
 @media only screen and (max-width: 400px) {
 	.title_infoleft {left: 0;}
 	.title_inforight {right: -3px;}
+	.subtitle {font-size: 1.4em;}
 }
