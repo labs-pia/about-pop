@@ -774,7 +774,7 @@ a, a:visited {
     text-decoration: none;
     font: 1.5em/1.3 Work-black, Work-bold, Helvetica, sans-serif;
     color: var(--primary);
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     text-transform: uppercase;
 }
 
@@ -1183,30 +1183,7 @@ textarea {
 }
 
 
-/* Liste der Events Tabelle table*/
-
-#flextable-table {
-    background-color: #fff;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#flextable-table .flextable-spacer {
-    height: 10px;
-    border-bottom: 5px solid #d91b86;
-}
-
-#flextable-table li {
-    padding: 6px 1em;
-}
-
-#flextable-table .flextable-head {
-    font-weight: 900;
-    color: #ff8f00;
-}
-
-
+/* Liste der Events */
 .timetable {
     display: flex;
     margin-bottom: 50px;
@@ -1445,10 +1422,6 @@ main {
     mix-blend-mode: normal;
 }
 
-.ui-loader {
-    display: none;
-}
-
 /* Media
 --------------------------------------------- */
 .page-content .wp-smiley,
@@ -1593,11 +1566,6 @@ main {
 
 .rcb-content-blocker a {
     font-size: 1em;
-}
-
-#cntnt-a324d9d0f-e4d2-41b2-8279-e913b3965301 a {
-	font-size: 1em;
-	letter-spacing: 3px;
 }
 
 /*--------------------------------------------------------------
@@ -1839,11 +1807,6 @@ width: 6.9em;
 		right: 0;
 	}
 
-<<<<<<< HEAD
-	.wp-block-buttons {
-	    margin-right: 0;
-	    margin-bottom: 50px;
-=======
 	#pojo-a11y-toolbar {
 		top: 70px !important;
 		margin-top: 20px;
@@ -1858,7 +1821,6 @@ width: 6.9em;
 
 	#table {
 		display:  none;
->>>>>>> d714c4179d542ae26180b2a4da481dd4075a6a63
 	}
 }
 
@@ -1912,7 +1874,7 @@ width: 6.9em;
 	.title_infoleft td, .title_inforight td {font-size: 1.8em;}
 	.home .entry-header h1 {
 		font-size: 3em;
-   		width: 5.3em;
+   		width: 5.2em;
 	    letter-spacing: 40px;
 	}
 	.post-password-required .entry-title, .post-password-protected .entry-title {

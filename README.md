@@ -8,7 +8,7 @@ Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 5.9
+Tested up to: 5.4
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
@@ -28,23 +28,21 @@ Installation
 
 = Does this theme support any plugins? =
 
-About-Pop includes support for Infinite Scroll in Jetpack.
+About-Pop includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 Changelog
 ---------------
-* 1.0.2 - Jun 9 2022
-multilingual
 
-* 1.0.1 - Mar 7 2022
+* 1.0 - Mar 7 2022
 Color-Update for 2022
 
-* 1.0.1 - Jan 26 2022
+* 1.0 - Jan 26 2022
 Color-Update for 2022
 
-* 1.0.1 - Aug 11 2021
+* 1.0 - Aug 11 2021
 Design for About-Pop
 
-* 1.0.0 - May 12 2015
+* 1.0 - May 12 2015
 Initial release
 
 Credits

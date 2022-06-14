@@ -46,7 +46,6 @@ function close() {
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
   p = p.replace("/", "");
-// p = path.split("/").slice(-1);
   
   $('html, body').animate({
     scrollTop : $(p).position().top
@@ -55,3 +54,7 @@ $('#primary-menu a ').click(function() {
     close();
   }
 });
+
+
+
+

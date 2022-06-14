@@ -20,66 +20,30 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-			
-			<div id="frame"> 
-				<?php // Start the Loop
-				while ( have_posts() ) :
-					the_post();
-					?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<div class="event_thumbnail">
-							<?php about_pop_post_thumbnail(); ?>
-						</div>
-						<div class="post-content">
-							<?php
-							if ( is_singular() ) :
-								the_title( '<h2 class="entry-title">', '</h2>' );
-							else :
-								the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-							endif;
 
-							if ( 'post' === get_post_type() ) :
-							endif; ?>
-							
-							<?php
-							the_content(
-								sprintf(
-									wp_kses(
-										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'about-pop' ),
-										array(
-											'span' => array(
-												'class' => array(),
-											),
-										)
-									),
-									wp_kses_post( get_the_title() )
-								)
-							);
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
-							wp_link_pages(
-								array(
-									'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'about-pop' ),
-									'after'  => '</div>',
-								)
-							);
-							?>
-						</div><!-- .entry-content -->
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_type() );
 
-					</article>
-				<?php 
+			endwhile;
 
-				endwhile;
+			the_posts_navigation();
 
-				the_posts_navigation();
+		else :
 
-			else :
+			get_template_part( 'template-parts/content', 'none' );
 
-				get_template_part( 'template-parts/content', 'none' );
+		endif;
+		?>
 
-			endif;
-			?>
-		</div>
 	</main><!-- #main -->
 
 <?php
