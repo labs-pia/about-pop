@@ -16,7 +16,7 @@ get_header();
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! You reached end of music.', 'about-pop' ); ?></h1>
 			</header>
-				<a class="back_home" href="#">Back to pop</a>
+				<a class="back_home" href="/">Back to pop</a>
 		</section>
 
 	</main><!-- #main -->

@@ -1,49 +1,43 @@
 const siteNavigation = document.getElementById( 'site-navigation' );
-const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+const button = document.getElementById( 'burger' );
 const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 var schalter = false;
 
 button.onclick = function () {
-	if (schalter == false) {
-		open();
-		schalter = true;
-	} else if (schalter == true) {
-		close();
+  if (schalter == false) {
+    open();
+  } else if (schalter == true) {
+    close();
     }
 };
 
 function open() {
-  siteNavigation.animate({
-    "height":"100vh"
-  }, 300);
+  siteNavigation.classList.remove('closeanimation');
+  siteNavigation.classList.add('openanimation');
   setTimeout("siteNavigation.style.height = '100vh';", 280);
-	
-  menu.animate({
-    "display":"flex"
-  }, 300);
-  setTimeout("menu.style.display = 'flex';", 150);
+  menu.style.display = 'flex';
+  setTimeout("menu.style.height = '100vh';", 280);
   menu.style.width = "100vw";
-  menu.style.margin = "25vh auto";
-  menu.style.height = "50vh";
+  menu.style.margin = "0";
+  menu.style.padding = "70px 0 0 0";
   menu.style.flexDirection = "column";
-  menu.style.justifyContent = "space-between";
-
   schalter = true;
-}
+};
 
 function close() {
-  siteNavigation.animate({
-    "height":"100px"
-  }, 300);
-  setTimeout("siteNavigation.style.height = '70px';", 280);
-	
-  menu.animate({
-    "display":"none"
-  }, 300);
+  siteNavigation.classList.remove('openanimation');
+  siteNavigation.classList.add('closeanimation');
+  setTimeout("siteNavigation.style.height = '100px';", 280);
+  let mql = window.matchMedia('(max-width: 768px)');
+  console.log(mql);
+    if (mql.matches) { // If media query matches
+      setTimeout("siteNavigation.style.height = '70px';", 280);
+    } else {
+      setTimeout("siteNavigation.style.height = '100px';", 280);
+    };
   setTimeout("menu.style.display = 'none';", 100);
-
   schalter = false;
-}
+};
 
 // Smooth scoller
 // by clicking on a menu item, the function handles the href attribute and scrolls to it
@@ -52,12 +46,12 @@ function close() {
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
   p = p.replace("/", "");
+// p = path.split("/").slice(-1);
   
   $('html, body').animate({
     scrollTop : $(p).position().top
-  },1500);
+  },1000);
   if (schalter == true) {
     close();
   }
 });
-
