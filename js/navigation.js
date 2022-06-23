@@ -45,19 +45,16 @@ function close() {
 
   $('#primary-menu a ').click(function() {
     var p = $(this).attr('href');
-        p = p.replace("/", "");
-        console.log(p);
+    var array = p.split("/");
 
-    var testlink = $(this).attr('href').split("/").slice(-1)[0];
-        console.log(testlink);
+    //get last element
+    var id = array[array.length];
 
     $('html, body').animate({
-      scrollTop : $(p).position().top
+      scrollTop : $(id).position().top
     },1000);
     close();
 
-    var lang = $('html').$(this).getAttribute("lang");
-    console.log(lang);
   });
 
 
