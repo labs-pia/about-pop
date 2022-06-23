@@ -46,7 +46,7 @@ function close() {
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
   //   p = p.replace("/", "");
-  p = path.split("/").slice(-1);
+  p = p.split("/").slice(-1);
   cosole.log(p);
   
   $('html, body').animate({
