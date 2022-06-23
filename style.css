@@ -1973,6 +1973,12 @@ width: 6.9em;
 	.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
 		padding: 25px 0 0 0;
 	}
+
+	.lang-item a {
+		padding: 0;
+		right: 100px;
+		top: -2px;
+	}
 }
 
 /* mobil */
