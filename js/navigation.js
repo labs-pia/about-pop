@@ -47,6 +47,8 @@ function close() {
     var p = $(this).attr('href');
     var array = p.split("/");
 
+    console.log(array.length);
+
     //get last element
     var _id = array[array.length];
 
