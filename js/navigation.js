@@ -57,9 +57,12 @@ function close() {
     close();
 
 
-    if ( get_locale() == 'en_US' ) {
+    if ( get_locale() == 'de_DE' ) {
       console.log('en');
     }
+
+    var lang = $('html').getAttribute("lang");
+    console.log(lang);
   });
 
 
