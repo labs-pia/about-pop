@@ -55,6 +55,11 @@ function close() {
       scrollTop : $(p).position().top
     },1000);
     close();
+
+
+    if ( get_locale() == 'en_US' ) {
+      console.log('en');
+    }
   });
 
 
