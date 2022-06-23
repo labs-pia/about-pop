@@ -45,14 +45,11 @@ function close() {
 
   $('#primary-menu a ').click(function() {
     var p = $(this).attr('href');
+    //split the url component
     var array = p.split("/");
-
-    console.log(array.length);
 
     //get last element
     let _id = array[array.length-1];
-
-    console.log(_id);
 
     $('html, body').animate({
       scrollTop : $(_id).position().top
