@@ -43,10 +43,6 @@ function close() {
 // by clicking on a menu item, the function handles the href attribute and scrolls to it
 //
 
-//if ( get_locale() == 'de_DE' ) {
-
-console.log(get_locale());
-
   $('#primary-menu a ').click(function() {
     var p = $(this).attr('href');
         p = p.replace("/", "");
