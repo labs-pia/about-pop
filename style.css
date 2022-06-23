@@ -1852,7 +1852,7 @@ width: 6.9em;
 
 	#burger {
 		top: -27px;
-		right: 20px;
+		right: 10px;
 	}
 	/* animation */
 	@keyframes close {
@@ -1976,7 +1976,7 @@ width: 6.9em;
 
 	.lang-item a {
 		padding: 0;
-		right: 100px;
+		right: 80px;
 		top: -2px;
 	}
 }
