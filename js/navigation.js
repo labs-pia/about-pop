@@ -46,19 +46,13 @@ function close() {
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
      p = p.replace("/", "");
-  // p = p.split("/").slice(-1);
-  console.log(p);
-  var testlink = $(this).attr('href').split("/").slice(-1)[0];
-  console.log(testlink);
 
+//  var testlink = $(this).attr('href').split("/").slice(-1)[0];
 
-  
   $('html, body').animate({
     scrollTop : $(p).position().top
   },1000);
-  if (schalter == true) {
-    close();
-  }
+  close();
 });
 
 
