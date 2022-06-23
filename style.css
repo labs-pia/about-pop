@@ -1086,6 +1086,10 @@ textarea {
 	border: none;
 }
 
+.lang-item {
+	list-style: none;
+}
+
 .lang-item a {
 	position: absolute;
 	top: 0;
