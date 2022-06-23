@@ -56,10 +56,6 @@ function close() {
     },1000);
     close();
 
-
-    var locale = get_locale();
-      console.log(locale);
-
     var lang = $('html').getAttribute("lang");
     console.log(lang);
   });
