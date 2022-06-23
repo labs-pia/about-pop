@@ -1087,7 +1087,7 @@ textarea {
 }
 
 .lang-item a {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 120px;
 	color: #fff;
