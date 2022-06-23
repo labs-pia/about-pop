@@ -52,9 +52,9 @@ $('#primary-menu a ').click(function() {
   $('html, body').animate({
     scrollTop : $(p).position().top
   },1000);
-//  if (schalter == true) {
+  if (schalter == true) {
     close();
-//  }
+  }
 });
 
 
