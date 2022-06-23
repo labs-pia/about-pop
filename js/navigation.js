@@ -57,9 +57,8 @@ function close() {
     close();
 
 
-    if ( get_locale() == 'de_DE' ) {
-      console.log('en');
-    }
+    var locale = get_locale();
+      console.log(locale);
 
     var lang = $('html').getAttribute("lang");
     console.log(lang);
