@@ -48,7 +48,7 @@ $('#primary-menu a ').click(function() {
      p = p.replace("/", "");
   // p = p.split("/").slice(-1);
   console.log(p);
-  var testlink = $(this).attr('href').split("/").slice(-1);
+  var testlink = $(this).attr('href').split("/").slice(-1)[0];
   console.log(testlink);
 
 
