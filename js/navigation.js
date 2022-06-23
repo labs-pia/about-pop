@@ -48,7 +48,8 @@ $('#primary-menu a ').click(function() {
       p = p.replace("/", "");
       console.log(p);
 
-//  var testlink = $(this).attr('href').split("/").slice(-1)[0];
+  var testlink = $(this).attr('href').split("/").slice(-1)[0];
+      console.log(testlink);
 
   $('html, body').animate({
     scrollTop : $(p).position().top
