@@ -50,7 +50,7 @@ function close() {
     console.log(array.length);
 
     //get last element
-    var _id = array[array.length];
+    let _id = array[array.length-1];
 
     console.log(_id);
 
