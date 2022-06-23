@@ -43,19 +43,23 @@ function close() {
 // by clicking on a menu item, the function handles the href attribute and scrolls to it
 //
 
-$('#primary-menu a ').click(function() {
-  var p = $(this).attr('href');
-      p = p.replace("/", "");
-      console.log(p);
+//if ( get_locale() == 'de_DE' ) {
 
-  var testlink = $(this).attr('href').split("/").slice(-1)[0];
-      console.log(testlink);
+console.log(get_locale());
 
-  $('html, body').animate({
-    scrollTop : $(p).position().top
-  },1000);
-  close();
-});
+  $('#primary-menu a ').click(function() {
+    var p = $(this).attr('href');
+        p = p.replace("/", "");
+        console.log(p);
+
+    var testlink = $(this).attr('href').split("/").slice(-1)[0];
+        console.log(testlink);
+
+    $('html, body').animate({
+      scrollTop : $(p).position().top
+    },1000);
+    close();
+  });
 
 
 
