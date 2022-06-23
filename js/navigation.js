@@ -45,8 +45,8 @@ function close() {
 
 $('#primary-menu a ').click(function() {
   var p = $(this).attr('href');
-  //   p = p.replace("/", "");
-  p = p.split("/").slice(-1);
+     p = p.replace("/", "");
+  // p = p.split("/").slice(-1);
   console.log(p);
   
   $('html, body').animate({
