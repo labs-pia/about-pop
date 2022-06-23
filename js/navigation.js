@@ -56,7 +56,7 @@ function close() {
     },1000);
     close();
 
-    var lang = $('html').getAttribute("lang");
+    var lang = $('html').$(this).getAttribute("lang");
     console.log(lang);
   });
 
