@@ -1086,6 +1086,18 @@ textarea {
 	border: none;
 }
 
+.lang-item a {
+	position: absolute;
+	top: 0;
+	right: 120px;
+	color: #fff;
+	z-index: 2;
+	font-size: 3.5em;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 13px;
+}
+
 .site-main .comment-navigation,
 .site-main
 .posts-navigation,
