@@ -48,10 +48,12 @@ function close() {
     var array = p.split("/");
 
     //get last element
-    var id = array[array.length];
+    var _id = array[array.length];
+
+    console.log(_id);
 
     $('html, body').animate({
-      scrollTop : $(id).position().top
+      scrollTop : $(_id).position().top
     },1000);
     close();
 
