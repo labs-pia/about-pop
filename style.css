@@ -1273,8 +1273,7 @@ textarea {
     filter: none;
 }
 
-.wp-block-latest-posts li > a,
-.archive li a {
+.wp-block-latest-posts li > a {
     color: #000000;
     clear: both;
     font-family: Work-black, Work-bold, Helvetica, sans-serif;
