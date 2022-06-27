@@ -35,10 +35,11 @@ get_header();
 							<div class="wp-block-latest-posts__post-excerpt">
 								<?php
 								the_excerpt();
+								/*
 								the_content(
 									sprintf(
 										wp_kses(
-											/* translators: %s: Name of current post. Only visible to screen readers */
+											/* translators: %s: Name of current post. Only visible to screen readers 
 											__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'about-pop' ),
 											array(
 												'span' => array(
@@ -49,6 +50,7 @@ get_header();
 										wp_kses_post( get_the_title() )
 									)
 								);
+								*/
 								?>
 							</div>
 						</li>
