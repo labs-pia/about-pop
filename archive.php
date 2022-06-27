@@ -26,34 +26,48 @@ get_header();
 					<?php // Start the Loop
 					while ( have_posts() ) :
 						echo '<li>';
-							the_post();
+						the_post();
+						?>
+						<div class="wp-block-latest-posts__featured-image aligncenter <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
+							<?php about_pop_post_thumbnail();?>
+						</div>
+						<?php the_title( '<a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" >', '</a>' );?>
+						<div class="wp-block-latest-posts__post-excerpt">
+							<?php
+							the_content(
+								sprintf(
+									wp_kses(
+										/* translators: %s: Name of current post. Only visible to screen readers */
+										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'about-pop' ),
+										array(
+											'span' => array(
+												'class' => array(),
+											),
+										)
+									),
+									wp_kses_post( get_the_title() )
+								)
+							);
 							?>
-							<div class="wp-block-latest-posts__featured-image aligncenter <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
-								<?php about_pop_post_thumbnail();?>
-							</div>
-							<?php the_title( '<a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" >', '</a>' );?>
-							<div class="wp-block-latest-posts__post-excerpt">
-								<?php
-								the_content(
-									sprintf(
-										wp_kses(
-											/* translators: %s: Name of current post. Only visible to screen readers */
-											__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'about-pop' ),
-											array(
-												'span' => array(
-													'class' => array(),
-												),
-											)
-										),
-										wp_kses_post( get_the_title() )
-									)
-								);
-								?>
-							</div>
+						</div>
+						</div>
+
+
+
+
 						</li>
-					<?php endwhile; ?>
-				</ul>
-			</div>
+					<?php 
+
+					endwhile;
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
+		?>
+			</ul>
+		</div>
 	</main><!-- #main -->
 
 <?php
