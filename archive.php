@@ -30,15 +30,17 @@ get_header();
 						?>
 						<div class="wp-block-latest-posts__featured-image aligncenter <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
 							<div class="event_thumbnail">
-								<?php about_pop_post_thumbnail(); ?>
-							</div>
-							<div class="wp-block-latest-posts__post-title">
-								<?php
+								<?php about_pop_post_thumbnail();
+
 								if ( is_singular() ) :
 									the_title( '<h2 class="entry-title">', '</h2>' );
 								else :
-									the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+									the_title( '<h2 class="entry-title"><a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 								endif;
+								?>
+							</div>
+							<div>
+								<?php
 
 								if ( 'post' === get_post_type() ) :
 								endif; ?>
