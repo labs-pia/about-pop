@@ -454,7 +454,7 @@ input,
 select,
 optgroup,
 textarea {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "Frutiger", sans-serif;
 	font-weight: 500;
 	line-height: 1.5;
@@ -1346,27 +1346,9 @@ textarea {
 }
 
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
-	margin-top: .5em;
-	margin-bottom: 1em;
 	position: relative;
 	top: -250px;
 }
-
-/*
-.archive .entry-title {
-	font-size: 1.5em;
-	text-shadow: 2px 2px #000;
-}
-
-.archive .post-content {
-	background-color: transparent;
-	box-shadow: none;
-	margin: -225px 0 0 0;
-	padding: 0;
-	height: 450px;
-	overflow: clip;
-}
-*/
 
 /* archive category
 --------------------------------------------- */
