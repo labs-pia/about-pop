@@ -34,7 +34,7 @@ get_header();
 							<?php the_title( '<a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" >', '</a>' );?>
 							<div class="wp-block-latest-posts__post-excerpt">
 								<?php
-								post_excerpt();
+								the_excerpt();
 								the_content(
 									sprintf(
 										wp_kses(
