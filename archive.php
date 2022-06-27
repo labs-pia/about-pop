@@ -26,24 +26,12 @@ get_header();
 					<?php // Start the Loop
 					while ( have_posts() ) :
 						echo '<li>';
-						the_post();
-						?>
-						<div class="wp-block-latest-posts__featured-image aligncenter <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
-							<div class="event_thumbnail">
-								<?php about_pop_post_thumbnail();
-
-								if ( is_singular() ) :
-									the_title( '<h2 class="entry-title">', '</h2>' );
-								else :
-									the_title( '<h2 class="entry-title"><a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-								endif;
-								?>
+							the_post();
+							?>
+							<div class="wp-block-latest-posts__featured-image aligncenter <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
+								<?php about_pop_post_thumbnail();?>
 							</div>
-							<div>
-								<?php
-
-								if ( 'post' === get_post_type() ) :
-								endif; ?>
+							<?php the_title( '<a class="wp-block-latest-posts__post-title" href="' . esc_url( get_permalink() ) . '" >', '</a>' );?>
 							<div class="wp-block-latest-posts__post-excerpt">
 								<?php
 								the_content(
@@ -62,26 +50,10 @@ get_header();
 								);
 								?>
 							</div>
-						</div>
-
-
-
-
 						</li>
-					<?php 
-
-					endwhile;
-
-					the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-			</ul>
-		</div>
+					<?php endwhile; ?>
+				</ul>
+			</div>
 	</main><!-- #main -->
 
 <?php
