@@ -1259,7 +1259,8 @@ textarea {
     margin: -50px -50px 50px -50px;
 }
 
-.wp-block-latest-posts__featured-image img {
+.wp-block-latest-posts__featured-image img,
+.archive .post-thumbnail img {
     width: 1024px;
     height: 350px;
     object-fit: cover;
@@ -1267,7 +1268,8 @@ textarea {
     transition: 250ms;
 }
 
-.wp-block-latest-posts li:hover img {
+.wp-block-latest-posts li:hover img,
+.archive li:hover .post-thumbnail img {
     filter: none;
 }
 
@@ -1301,7 +1303,7 @@ textarea {
     display: block;
 }
 
-/* latest posts update kachelansicht */
+/* latest posts kachelansicht */
 .wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts {
 	padding: 50px 25px;
 }
@@ -1319,14 +1321,16 @@ textarea {
 	background-color: #000;
 }
 
-.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts .wp-block-latest-posts__featured-image img {
+.wp-block-latest-posts__list.programm.wp-block-latest-posts img,
+.archive .post-thumbnail img {
 	height: 250px;
 	position: relative;
 	top: 0px;
 	opacity: 0.6;
 }
 
-.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a,
+.archive li a {
 	top: -250px;
 	position: relative;
 	z-index: 1;
@@ -1336,7 +1340,8 @@ textarea {
 	word-break: break-word;
 }
 
-.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a:first-child {
+.wp-block-latest-posts__list.is-grid.columns-5.programm.wp-block-latest-posts li a:first-child,
+.archive li a:first-child {
 	top: 0;
 }
 
@@ -1347,16 +1352,30 @@ textarea {
 	top: -250px;
 }
 
+/*
+.archive .entry-title {
+	font-size: 1.5em;
+	text-shadow: 2px 2px #000;
+}
+
+.archive .post-content {
+	background-color: transparent;
+	box-shadow: none;
+	margin: -225px 0 0 0;
+	padding: 0;
+	height: 450px;
+	overflow: clip;
+}
+*/
+
+/* archive category
+--------------------------------------------- */
+
 .archive .page-title {
 	font-size: 4em;
 	width: 80%;
 	letter-spacing: 5px;
 	margin: 50px 50px 50px 100px;
-}
-
-.archive .post-thumbnail {
-	margin: 0px -60px -100px -60px;
-	display: block;
 }
 
 select {
