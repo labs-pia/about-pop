@@ -43,15 +43,17 @@ function close() {
 // by clicking on a menu item, the function handles the href attribute and scrolls to it
 //
 
-$('#primary-menu a ').click(function() {
-  var p = $(this).attr('href');
-  p = p.replace("/", "");
-// p = path.split("/").slice(-1);
-  
-  $('html, body').animate({
-    scrollTop : $(p).position().top
-  },1000);
-  if (schalter == true) {
+  $('#primary-menu a ').click(function() {
+    var p = $(this).attr('href');
+    //split the url component
+    var array = p.split("/");
+
+    //get last element
+    let _id = array[array.length-1];
+
+    $('html, body').animate({
+      scrollTop : $(_id).position().top
+    },1000);
     close();
-  }
-});
+
+  });
